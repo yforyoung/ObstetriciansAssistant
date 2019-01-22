@@ -11,7 +11,7 @@ class Advertisement {
     var type:Int=-1
 
 
-    object TYPE{
+    companion object {
         const val SPLASH_AD=1
         const val HOME_AD=2
     }
