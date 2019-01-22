@@ -10,7 +10,7 @@ class AdvertisementPresenter(private var adView: IAdvertisementView) {
 
     fun getAdvertisement(): Advertisement = adModel.getAdvertisement(adView.getType())
 
-    fun visitAdvertisment(){
+    fun visitAdvertisement(){
         adModel.visitAdvertisement(adView.getViewContext())
     }
 
