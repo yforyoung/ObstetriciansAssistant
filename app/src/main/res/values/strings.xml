@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ObstetriciansAssistant</string>
     <string name="jump_ad_text">跳过</string>
+    <string name="search_text">搜索药物、文章、遗传病等</string>
 </resources>
