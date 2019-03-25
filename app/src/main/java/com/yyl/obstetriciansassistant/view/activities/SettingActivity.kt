@@ -1,13 +1,13 @@
 package com.yyl.obstetriciansassistant.view.activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceActivity
 import com.yyl.obstetriciansassistant.R
 
-class SettingActivity : AppCompatActivity() {
+class SettingActivity : PreferenceActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_setting)
+        addPreferencesFromResource(R.xml.setting_preference)
     }
 }

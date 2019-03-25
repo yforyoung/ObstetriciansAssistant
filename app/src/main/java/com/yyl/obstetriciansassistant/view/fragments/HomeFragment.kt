@@ -5,20 +5,36 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v4.app.Fragment
 import android.support.v4.view.ViewPager
+import android.support.v7.widget.DividerItemDecoration
+import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import com.yyl.obstetriciansassistant.App.Companion.TAG
 import com.yyl.obstetriciansassistant.R
+import com.yyl.obstetriciansassistant.model.EssayModel
+import com.yyl.obstetriciansassistant.model.EssayModelImpl
+import com.yyl.obstetriciansassistant.model.RiskMedicineModel
+import com.yyl.obstetriciansassistant.model.RiskMedicineModelImpl
 import com.yyl.obstetriciansassistant.view.adapter.AdPagerAdapter
+import com.yyl.obstetriciansassistant.view.adapter.HomeEssayAdapter
+import com.yyl.obstetriciansassistant.view.adapter.HomeRiskAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.util.ArrayList
 
 class HomeFragment : Fragment() {
     private val list = ArrayList<ImageView>()
     private val delayMills: Long = 5000
+
+    private lateinit var homeEssayAdapter:HomeEssayAdapter
+    private lateinit var homeRiskAdapter: HomeRiskAdapter
+
+    private val essayModel:EssayModel=EssayModelImpl()
+    private val riskModel:RiskMedicineModel=RiskMedicineModelImpl()
+
     private var handler = Handler {
         if (it.what == 0) {
             val curr = (ad_viewpager.currentItem + 1) % list.size
@@ -31,6 +47,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        /*******假数据*********/
         val img1 = ImageView(activity)
         img1.setBackgroundColor(Color.BLACK)
         val img2 = ImageView(activity)
@@ -40,6 +57,7 @@ class HomeFragment : Fragment() {
         list.add(img1)
         list.add(img2)
         list.add(img3)
+        /********************/
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -49,6 +67,33 @@ class HomeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initAdViewPager()
+        initHomeEssay()
+        initHomeRisk()
+
+    }
+
+    private fun initHomeRisk() {
+        home_risk_list_view.layoutManager=LinearLayoutManager(activity,LinearLayoutManager.VERTICAL,false)
+        homeRiskAdapter= HomeRiskAdapter(riskModel.getHotRiskMedicine())
+        homeRiskAdapter.setOnClickListener(object :HomeRiskAdapter.OnClickListener{
+            override fun onItemClick(v: View, position: Int) {
+                Log.e(TAG, "risk item click $position")
+            }
+        })
+        home_risk_list_view.adapter=homeRiskAdapter
+        home_risk_list_view.addItemDecoration(DividerItemDecoration(activity,DividerItemDecoration.VERTICAL))
+    }
+
+    private fun initHomeEssay() {
+        home_essay_list_view.layoutManager=LinearLayoutManager(activity,LinearLayoutManager.VERTICAL,false)
+        homeEssayAdapter= HomeEssayAdapter(essayModel.getHotEssay())
+        homeEssayAdapter.setOnClickListener(object :HomeEssayAdapter.OnClickListener{
+            override fun onItemClick(v: View, position: Int) {
+                Log.e(TAG,"essay item click $position")
+            }
+        })
+        home_essay_list_view.adapter=homeEssayAdapter
+        home_essay_list_view.addItemDecoration(DividerItemDecoration(activity,DividerItemDecoration.VERTICAL))
 
     }
 

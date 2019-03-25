@@ -12,5 +12,6 @@ class App:Application() {
     companion object{
         @SuppressLint("StaticFieldLeak")
         lateinit var context:Context
+        val TAG:String="yforyoung"
     }
 }

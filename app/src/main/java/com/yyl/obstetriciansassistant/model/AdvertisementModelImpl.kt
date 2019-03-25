@@ -7,7 +7,7 @@ import android.net.Uri
 import android.util.Log
 import com.yyl.obstetriciansassistant.beans.Advertisement
 
-class AdvertisementModelImpl : IAdvertisementModel {
+class AdvertisementModelImpl : AdvertisementModel {
     private lateinit var ad: Advertisement
 
     override fun getAdvertisement(type: Int): Advertisement {
