@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="searchType">
+        <item>文章</item>
+        <item>问题</item>
+        <item>药物</item>
+        <item>视频</item>
+        <item>病例</item>
+    </array>
+</resources>
