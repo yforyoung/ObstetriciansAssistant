@@ -9,10 +9,8 @@ class SearchModelImpl : SearchModel {
         val s3 = SearchResult("search title2", 2)
         val s4 = SearchResult("search title3", 3)
         val s5 = SearchResult("search title4", 4)
-        val s6 = SearchResult("search title2", 2)
-        val s7 = SearchResult("search title3", 3)
 
-        return arrayListOf(searchResult, s2, s3, s4, s5, s6, s7)
+        return arrayListOf(searchResult, s2, s3, s4, s5)
     }
 
     override fun getSearchResult(type: Int): List<SearchResult> {

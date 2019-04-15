@@ -1,6 +1,8 @@
 package com.yyl.obstetriciansassistant.beans
 
-class Case {
+import java.io.Serializable
+
+class Case : Serializable {
     var id:Int=-1
     lateinit var hospital:Hospital
     lateinit var createDate: String

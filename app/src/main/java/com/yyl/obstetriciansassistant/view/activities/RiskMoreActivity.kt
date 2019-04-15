@@ -5,16 +5,17 @@ import android.os.Bundle
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
+import com.yyl.obstetriciansassistant.MEDICINE
 import com.yyl.obstetriciansassistant.R
 import com.yyl.obstetriciansassistant.beans.Medicine
-import com.yyl.obstetriciansassistant.model.RiskMedicineModelImpl
-import com.yyl.obstetriciansassistant.toast
-import com.yyl.obstetriciansassistant.view.adapter.RiskAdapter
+import com.yyl.obstetriciansassistant.jump2Activity
+import com.yyl.obstetriciansassistant.model.MedicineModelImpl
+import com.yyl.obstetriciansassistant.view.adapter.MedicineAdapter
 import kotlinx.android.synthetic.main.activity_risk_more.*
 
 class RiskMoreActivity : AppCompatActivity() {
-    private lateinit var adapter: RiskAdapter
-    private val riskMedicineModel = RiskMedicineModelImpl()
+    private lateinit var adapter: MedicineAdapter
+    private val riskMedicineModel = MedicineModelImpl()
     private lateinit var initial:String
     private lateinit var list:List<Medicine>
 
@@ -24,13 +25,13 @@ class RiskMoreActivity : AppCompatActivity() {
 
         initData()
         initView()
-        initRisk()
+        initMedicine()
     }
 
     private fun initView() {
         risk_more_toolbar.title=""
         toolbar_title.text=initial
-        toolbar_back_bt.setOnClickListener {
+        risk_toolbar_back_bt.setOnClickListener {
             finish()
         }
         setSupportActionBar(risk_more_toolbar)
@@ -41,12 +42,14 @@ class RiskMoreActivity : AppCompatActivity() {
         list=riskMedicineModel.getRiskMedicineListFromInitail(initial)
     }
 
-    private fun initRisk() {
-        adapter = RiskAdapter(list)
-        adapter.onItemClickListener = object : RiskAdapter.OnItemClickListener {
+    private fun initMedicine() {
+        adapter = MedicineAdapter(list)
+        adapter.onItemClickListener = object : MedicineAdapter.OnItemClickListener {
             override fun onItemClick(v: View, position: Int) {
                 //TODO 显示medicine信息页面
-                toast("点击了$position  ${list[position].medicienName}")
+
+                jump2Activity(this@RiskMoreActivity,DetailActivity::class.java, MEDICINE,list[position])
+
             }
         }
         risk_list_view.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)

@@ -6,10 +6,10 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.yyl.obstetriciansassistant.R
+import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Question
 import com.yyl.obstetriciansassistant.model.QAModelImpl
-import com.yyl.obstetriciansassistant.toast
+import com.yyl.obstetriciansassistant.view.activities.DetailActivity
 import com.yyl.obstetriciansassistant.view.adapter.QAAdapter
 import kotlinx.android.synthetic.main.fragment_qa.*
 
@@ -34,12 +34,9 @@ class QAFragment : Fragment() {
         adapter = QAAdapter(list)
         adapter.setOnItemClickListener(object : QAAdapter.OnItemClickListener {
             override fun onItemClick(v: View, position: Int) {
-                toast("click $position")
+                activity!!.jump2Activity(activity!!, DetailActivity::class.java, QA,list[position])
             }
         })
-
         qa_list_view.adapter=adapter
-
-
     }
 }

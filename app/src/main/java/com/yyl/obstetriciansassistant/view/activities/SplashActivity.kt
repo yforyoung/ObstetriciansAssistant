@@ -1,17 +1,14 @@
 package com.yyl.obstetriciansassistant.view.activities
 
 import android.content.Context
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.yyl.obstetriciansassistant.R
 import com.yyl.obstetriciansassistant.beans.Advertisement
 import com.yyl.obstetriciansassistant.jump2Activity
 import com.yyl.obstetriciansassistant.presenter.AdvertisementPresenter
 import com.yyl.obstetriciansassistant.view.IAdvertisementView
 import kotlinx.android.synthetic.main.activity_splash.*
-import java.sql.Time
 import java.util.*
 
 class SplashActivity : AppCompatActivity(), IAdvertisementView {

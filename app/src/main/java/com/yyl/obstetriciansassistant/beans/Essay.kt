@@ -1,6 +1,8 @@
 package com.yyl.obstetriciansassistant.beans
 
-class Essay {
+import java.io.Serializable
+
+class Essay :Serializable{
     lateinit var title: String
     lateinit var content: String
     lateinit var author: String

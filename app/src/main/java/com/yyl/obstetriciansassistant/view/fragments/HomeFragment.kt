@@ -14,14 +14,20 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import com.yyl.obstetriciansassistant.App.Companion.TAG
+import com.yyl.obstetriciansassistant.ESSAY
+import com.yyl.obstetriciansassistant.MEDICINE
 import com.yyl.obstetriciansassistant.R
+import com.yyl.obstetriciansassistant.beans.Essay
+import com.yyl.obstetriciansassistant.beans.Medicine
+import com.yyl.obstetriciansassistant.jump2Activity
 import com.yyl.obstetriciansassistant.model.EssayModel
 import com.yyl.obstetriciansassistant.model.EssayModelImpl
-import com.yyl.obstetriciansassistant.model.RiskMedicineModel
-import com.yyl.obstetriciansassistant.model.RiskMedicineModelImpl
+import com.yyl.obstetriciansassistant.model.MedicineModel
+import com.yyl.obstetriciansassistant.model.MedicineModelImpl
+import com.yyl.obstetriciansassistant.view.activities.DetailActivity
 import com.yyl.obstetriciansassistant.view.adapter.AdPagerAdapter
 import com.yyl.obstetriciansassistant.view.adapter.HomeEssayAdapter
-import com.yyl.obstetriciansassistant.view.adapter.HomeRiskAdapter
+import com.yyl.obstetriciansassistant.view.adapter.HomeMedicineAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.util.ArrayList
 
@@ -29,11 +35,14 @@ class HomeFragment : Fragment() {
     private val list = ArrayList<ImageView>()
     private val delayMills: Long = 5000
 
+    private var essayList= arrayListOf<Essay>()
+    private var medicineList= arrayListOf<Medicine>()
+
     private lateinit var homeEssayAdapter:HomeEssayAdapter
-    private lateinit var homeRiskAdapter: HomeRiskAdapter
+    private lateinit var medicineAdapter: HomeMedicineAdapter
 
     private val essayModel:EssayModel=EssayModelImpl()
-    private val riskModel:RiskMedicineModel=RiskMedicineModelImpl()
+    private val medicineModel:MedicineModel=MedicineModelImpl()
 
     private var handler = Handler {
         if (it.what == 0) {
@@ -58,6 +67,7 @@ class HomeFragment : Fragment() {
         list.add(img2)
         list.add(img3)
         /********************/
+
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -74,14 +84,22 @@ class HomeFragment : Fragment() {
 
     private fun initHomeRisk() {
         home_risk_list_view.layoutManager=LinearLayoutManager(activity,LinearLayoutManager.VERTICAL,false)
-        homeRiskAdapter= HomeRiskAdapter(riskModel.getHotRiskMedicine())
-        homeRiskAdapter.setOnClickListener(object :HomeRiskAdapter.OnClickListener{
+        medicineAdapter= HomeMedicineAdapter(medicineModel.getHotRiskMedicine())
+        medicineAdapter.setOnClickListener(object :HomeMedicineAdapter.OnClickListener{
             override fun onItemClick(v: View, position: Int) {
                 Log.e(TAG, "risk item click $position")
+                activity!!.jump2Activity(activity!!,DetailActivity::class.java, MEDICINE,medicineList[position])
             }
         })
-        home_risk_list_view.adapter=homeRiskAdapter
+        home_risk_list_view.adapter=medicineAdapter
         home_risk_list_view.addItemDecoration(DividerItemDecoration(activity,DividerItemDecoration.VERTICAL))
+        refreshHotMedicine()
+    }
+
+    private fun refreshHotMedicine(){
+        medicineList.clear()
+        medicineList.addAll(medicineModel.getHotRiskMedicine())
+        medicineAdapter.notifyDataSetChanged()
     }
 
     private fun initHomeEssay() {
@@ -90,11 +108,19 @@ class HomeFragment : Fragment() {
         homeEssayAdapter.setOnClickListener(object :HomeEssayAdapter.OnClickListener{
             override fun onItemClick(v: View, position: Int) {
                 Log.e(TAG,"essay item click $position")
+                activity!!.jump2Activity(activity!!, DetailActivity::class.java, ESSAY,essayList[position])
             }
         })
         home_essay_list_view.adapter=homeEssayAdapter
         home_essay_list_view.addItemDecoration(DividerItemDecoration(activity,DividerItemDecoration.VERTICAL))
+        refreshHotEssay()
 
+    }
+
+    private fun refreshHotEssay(){
+        essayList.clear()
+        essayList.addAll(essayModel.getHotEssay())
+        homeEssayAdapter.notifyDataSetChanged()
     }
 
     private fun initAdViewPager() {

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kk.taurus.playerbase:playerbase:3.3.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/playerbase-3.3.5.aar/be9890f998d6e1c70684508f5d6c3e40/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/playerbase-3.3.5.aar/be9890f998d6e1c70684508f5d6c3e40/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kk.taurus.playerbase/playerbase/3.3.5/90721d0f00c909ddfce95033845fa8f6dd7d79ca/playerbase-3.3.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

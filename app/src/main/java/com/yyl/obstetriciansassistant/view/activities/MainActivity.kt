@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.design.widget.NavigationView
 import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.view.PagerAdapter
 import android.support.v4.view.ViewPager
 import android.view.Gravity
 import android.view.MenuItem
@@ -33,6 +31,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initView()
+
     }
 
     private fun initView() {
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val fragmentList=ArrayList<Fragment>()
         fragmentList.add(HomeFragment())
-        fragmentList.add(RiskFragment())
+        fragmentList.add(MedicineFragment())
         fragmentList.add(TVFragment())
         fragmentList.add(CaseFragment())
         fragmentList.add(QAFragment())

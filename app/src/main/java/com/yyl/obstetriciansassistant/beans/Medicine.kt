@@ -1,6 +1,8 @@
 package com.yyl.obstetriciansassistant.beans
 
-class Medicine {
+import java.io.Serializable
+
+class Medicine : Serializable {
     lateinit var id:String
     lateinit var medicienName:String
     lateinit var hospitalName:String

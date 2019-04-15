@@ -9,7 +9,7 @@ import com.yyl.obstetriciansassistant.R
 import com.yyl.obstetriciansassistant.beans.Case
 import kotlinx.android.synthetic.main.item_case_list.view.*
 
-class CaseAdapter(var list:MutableList<Case>) : RecyclerView.Adapter<CaseAdapter.ViewHolder>() {
+class CaseAdapter(var list:List<Case>) : RecyclerView.Adapter<CaseAdapter.ViewHolder>() {
     var onItemClickListener: OnItemClickListener?=null
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {

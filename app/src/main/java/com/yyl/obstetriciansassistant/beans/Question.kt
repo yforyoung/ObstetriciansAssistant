@@ -1,8 +1,9 @@
 package com.yyl.obstetriciansassistant.beans
 
+import java.io.Serializable
 import java.util.*
 
-class Question {
+class Question : Serializable {
     lateinit var id:String
     lateinit var creator:User
     var type:Int = -1

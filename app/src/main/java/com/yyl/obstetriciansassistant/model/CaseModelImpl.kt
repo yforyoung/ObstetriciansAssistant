@@ -3,9 +3,10 @@ package com.yyl.obstetriciansassistant.model
 import com.yyl.obstetriciansassistant.beans.Case
 import java.text.DateFormat
 import java.util.*
+import kotlin.collections.ArrayList
 
 class CaseModelImpl : CaseModel {
-    override fun getCases(): MutableList<Case> {
+    override fun getCases(): ArrayList<Case> {
         val date=Date(119, 4, 1)
         val s=DateFormat.getDateInstance().format(date)
         val c1 = Case(1, s, s, "超长的中文名有十个字", "resonresonresonresonresonresonresonresonresonresonreson", "treatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatment")
