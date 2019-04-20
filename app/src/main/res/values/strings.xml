@@ -5,4 +5,6 @@
     <string name="testString">
         批准日期：2010-08-25%0D%0A剂型：其它剂型%0D%0A规格：每瓶装12毫升%3B30毫升%3B45毫升%3B88毫升%0D%0A储存：密封，置阴凉处%28不超过20°C%29。%0D%0A有效期：48个月。
     </string>
+
+    <string name="url">http://sl1996.viphk.ngrok.org/Dc/</string>
 </resources>

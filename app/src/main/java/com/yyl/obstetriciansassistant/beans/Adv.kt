@@ -1,7 +1,6 @@
 package com.yyl.obstetriciansassistant.beans
 
-
-class Clazz {
+class Adv {
     lateinit var id:String
-    lateinit var department:String
+    lateinit var adv:String
 }

@@ -15,19 +15,25 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".view.activities.RegisterActivity">
+        </activity>
+        <activity android:name=".view.activities.LoadActivity">
+
+        </activity>
         <activity android:name=".view.activities.DetailActivity">
         </activity>
         <activity android:name=".view.activities.RiskMoreActivity">
         </activity>
         <activity android:name=".view.activities.MainActivity">
+        </activity>
+        <activity android:name=".view.activities.SettingActivity"/>
+        <activity android:name=".view.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".view.activities.SettingActivity"/>
-        <activity android:name=".view.activities.SplashActivity"/>
         <activity android:name=".view.activities.SearchActivity"/>
     </application>
 
