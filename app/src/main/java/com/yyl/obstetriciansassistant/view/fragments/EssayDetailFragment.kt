@@ -29,9 +29,12 @@ class EssayDetailFragment : Fragment() {
     private fun initData() {
         essay= activity!!.intent!!.getBundleExtra(VALUE).getSerializable(VALUE) as Essay
         essay_detail_title.text=essay.title
-        essay_detail_author.text=essay.author
+        essay_detail_author.text=essay.source
         val s=essay.content
+        val re=Html.fromHtml(s).toString()
+/*
         val re=URLDecoder.decode(s, "utf-8")
+*/
         essay_detail_content.text=re
 
     }

@@ -13,9 +13,11 @@ import com.yyl.obstetriciansassistant.model.CaseModelImpl
 import com.yyl.obstetriciansassistant.view.activities.DetailActivity
 import com.yyl.obstetriciansassistant.view.adapter.CaseAdapter
 import kotlinx.android.synthetic.main.fragment_case.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class CaseFragment : Fragment() {
-    private var list = arrayListOf<Case>()
+    private val list = arrayListOf<Case>()
     private val caseModel = CaseModelImpl()
     private lateinit var adapter: CaseAdapter
 
@@ -30,7 +32,6 @@ class CaseFragment : Fragment() {
     }
 
     private fun initCase() {
-        list = caseModel.getCases()
         adapter = CaseAdapter(list)
         adapter.onItemClickListener = object : CaseAdapter.OnItemClickListener {
             override fun onItemClick(v: View, position: Int) {
@@ -39,7 +40,7 @@ class CaseFragment : Fragment() {
 
             override fun onItemEditClick(v: View, position: Int) {
                 toast("edit click $position")
-                activity!!.jump2Activity(activity!!, DetailActivity::class.java, CASE, CHANGE,list[position])
+                activity!!.jump2Activity(activity!!, DetailActivity::class.java, CASE, CHANGE, list[position])
             }
 
             override fun onItemDeleteClick(v: View, position: Int) {
@@ -62,5 +63,19 @@ class CaseFragment : Fragment() {
         }
         case_list_view.layoutManager = LinearLayoutManager(activity!!, LinearLayoutManager.VERTICAL, false)
         case_list_view.adapter = adapter
+
+        refreshCase()
+    }
+
+    private fun refreshCase() {
+        GlobalScope.launch {
+            list.clear()
+            list.addAll(caseModel.getCases())
+            GlobalScope.launch(UI) {
+                adapter.notifyDataSetChanged()
+
+            }
+
+        }
     }
 }

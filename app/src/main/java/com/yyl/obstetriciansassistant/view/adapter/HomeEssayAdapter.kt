@@ -1,6 +1,7 @@
 package com.yyl.obstetriciansassistant.view.adapter
 
 import android.support.v7.widget.RecyclerView
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,12 +34,14 @@ class HomeEssayAdapter(var list: List<Essay>) : RecyclerView.Adapter<HomeEssayAd
         p0.itemView.tag = p1
         with(p0.itemView) {
             essay_title.text = list[p1].title
-            essay_author.text = list[p1].author
-            val content = list[p1].content
-            if (content.length > 100)
+            essay_author.text = list[p1].source
+            val content = Html.fromHtml(list[p1].content).toString()
+
+           /* if (content.length > 100)
                 essay_content.text = content.substring(0, 100)
             else
-                essay_content.text = list[p1].content
+                essay_content.text = list[p1].content*/
+            essay_content.text=content
         }
 
     }

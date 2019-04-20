@@ -8,4 +8,5 @@ interface MedicineModel {
     fun getRiskMedicineListFromInitail(s:String):List<Medicine>
     fun getHotRiskMedicine():List<Medicine>
     fun getInitial():List<String>
+    fun setHotMedicine(json:String)
 }

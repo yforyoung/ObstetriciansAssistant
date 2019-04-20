@@ -1,9 +1,22 @@
 package com.yyl.obstetriciansassistant.model
 
+import com.google.gson.reflect.TypeToken
+import com.yyl.obstetriciansassistant.SingleTon
 import com.yyl.obstetriciansassistant.beans.Medicine
+import com.yyl.obstetriciansassistant.beans.ResponseData
 import com.yyl.obstetriciansassistant.beans.Risk
 
 class MedicineModelImpl :MedicineModel {
+    private val hotMedicineList= arrayListOf<Medicine>()
+
+    override fun setHotMedicine(json: String) {
+        val responseData=SingleTon.instance.gson.fromJson<ResponseData<List<Medicine>>>(json,
+            object :TypeToken<ResponseData<List<Medicine>>>(){}.type)
+        hotMedicineList.clear()
+        hotMedicineList.addAll(responseData.data!!)
+
+    }
+
     override fun getInitial(): List<String> {
         return arrayListOf("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
     }
@@ -60,9 +73,10 @@ class MedicineModelImpl :MedicineModel {
     }
 
     override fun getHotRiskMedicine(): List<Medicine> {
-        val medicine=Medicine("test medicinemedicinemedicinemedicine","test medicine content")
+     /*   val medicine=Medicine("test medicinemedicinemedicinemedicine","test medicine content")
         val medicine2=Medicine("test medicine2","test medicine content2medicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicinemedicine")
 
-        return arrayListOf(medicine,medicine2)
+        return arrayListOf(medicine,medicine2)*/
+        return hotMedicineList
     }
 }

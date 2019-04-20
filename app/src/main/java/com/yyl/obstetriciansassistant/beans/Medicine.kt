@@ -1,18 +1,16 @@
 package com.yyl.obstetriciansassistant.beans
 
+import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
-class Medicine : Serializable {
-    lateinit var id:String
-    lateinit var medicienName:String
-    lateinit var hospitalName:String
-    lateinit var level:String
-    lateinit var EnName:String
-    lateinit var medicineIntroduce:String
-    var searchTime:Int=0
+class Medicine(medicienName: String, medicineIntroduce: String) : Serializable {
+    @SerializedName("riskcode")
+    lateinit var riskCode: String
+    var name: String = medicienName
+    lateinit var type: String
+    lateinit var number: String
+    @SerializedName("englishname")
+    lateinit var englishName: String
+    var introduce: String = medicineIntroduce
 
-    constructor(medicienName: String, medicineIntroduce: String) {
-        this.medicienName = medicienName
-        this.medicineIntroduce = medicineIntroduce
-    }
 }

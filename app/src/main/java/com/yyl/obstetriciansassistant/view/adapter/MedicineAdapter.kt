@@ -22,7 +22,7 @@ class MedicineAdapter(var list:List<Medicine>) :RecyclerView.Adapter<MedicineAda
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
         p0.itemView.tag=p1
-        p0.text.text=list[p1].medicienName
+        p0.text.text=list[p1].name
     }
 
     class ViewHolder(itemView:View) :RecyclerView.ViewHolder(itemView){

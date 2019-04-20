@@ -1,34 +1,96 @@
 package com.yyl.obstetriciansassistant.model
 
+import com.google.gson.reflect.TypeToken
+import com.yyl.obstetriciansassistant.REQUEST_URL
+import com.yyl.obstetriciansassistant.SingleTon
 import com.yyl.obstetriciansassistant.beans.Answer
 import com.yyl.obstetriciansassistant.beans.Question
+import com.yyl.obstetriciansassistant.beans.QuestionType
+import com.yyl.obstetriciansassistant.beans.ResponseData
+import com.yyl.obstetriciansassistant.utils.HttpUtils
 
-class QAModelImpl :QAModel {
-    override fun getAnswer(): List<Answer> {
-        val a1= Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a2 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a3 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a4 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a5 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
+class QAModelImpl : QAModel {
+    private var type= arrayListOf<QuestionType>()
 
-        return arrayListOf(a1,a2,a3,a4,a5)
+    override suspend fun addQuestion(title: String, content: String, id: String): Boolean {
+        val param = HashMap<String, String>()
+        param["createid"] = SingleTon.instance.user!!.id
+        param["typeid"] = id
+        param["content"] = content
+        param["title"] = title
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/addquestions", param)
+        return SingleTon.instance.gson.fromJson(json, ResponseData::class.java).retcode == 1
+
     }
 
-    override fun getQAList(): List<Question> {
-        val a1= Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a2 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a3 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a4 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
-        val a5 =Answer("2014-1-1","十五个字符测试测试测试测试十五个字")
+    override fun getTypeId(position: Int): String {
+        return type[position].id
+    }
 
-        val aList=arrayListOf(a1,a2,a3,a4,a5)
+    override suspend fun getTypeName(): ArrayList<String> {
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/getquestionstype", null)
+        val responseData=SingleTon.instance.gson.fromJson<ResponseData<List<QuestionType>>>(json,
+            object :TypeToken<ResponseData<List<QuestionType>>>(){}.type)
+        val nameList= arrayListOf<String>()
+        if (responseData.retcode==1){
+            type.clear()
+            type.addAll(responseData.data!!)
+            for (t in type){
+                nameList.add(t.type)
+            }
+        }
 
-        val q1=Question("十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试","十五个字符测试测试测试测试",aList,10)
-        val q2=Question("十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试","title",aList,10)
-        val q3=Question("content","title",aList,10)
-        val q4=Question("十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试","title",aList,10)
-        val q5=Question("十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试十五个字符测试测试测试测试","title",aList,10)
-        return arrayListOf(q1,q2,q3,q4,q5)
+        return nameList
+    }
+
+    override suspend fun addAnswer(id: String, content: String): Boolean {
+        val param = HashMap<String, String>()
+        param["questionsid"] = id
+        param["content"] = content
+        param["userid"] = SingleTon.instance.user!!.id
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/dellikes", param)
+        if (SingleTon.instance.gson.fromJson(json, ResponseData::class.java).retcode == 1)
+            return true
+        return false
+    }
+
+    override suspend fun unLike(id: String) {
+        val param = HashMap<String, String>()
+        param["userquestionsid"] = id
+        param["userid"] = SingleTon.instance.user!!.id
+        HttpUtils.instance.doPostAsync("$REQUEST_URL/dellikes", param)
+    }
+
+    override suspend fun setLike(id: String) {
+        val param = HashMap<String, String>()
+        param["userquestionsid"] = id
+        param["userid"] = SingleTon.instance.user!!.id
+        HttpUtils.instance.doPostAsync("$REQUEST_URL/likes", param)
+    }
+
+    override suspend fun getAnswer(id: String): List<Answer> {
+        val param = HashMap<String, String>()
+        param["userid"] = SingleTon.instance.user!!.id
+        param["id"] = id
+
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/getcomment", param)
+
+        val res = SingleTon.instance.gson.fromJson<ResponseData<List<Answer>>>(
+            json,
+            object : TypeToken<ResponseData<List<Answer>>>() {}.type
+        )
+        return res.data!!
+    }
+
+    override suspend fun getQAList(): List<Question> {
+
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/getquestions", null)
+
+        val res = SingleTon.instance.gson.fromJson<ResponseData<List<Question>>>(
+            json,
+            object : TypeToken<ResponseData<List<Question>>>() {}.type
+        )
+        return res.data!!
     }
 
 }

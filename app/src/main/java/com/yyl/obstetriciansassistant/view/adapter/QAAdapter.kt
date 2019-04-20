@@ -32,9 +32,10 @@ class QAAdapter(val list: List<Question>):RecyclerView.Adapter<QAAdapter.ViewHol
             tag=p1
             qa_title.text=question.title
             qa_content.text=question.content
+            /*
             answer_count.text= question.answers.size.toString()
             view_count.text=question.viewCount.toString()
-            latest_answer.text=question.answers[question.answers.size-1].answerDate
+            latest_answer.text=question.answers[question.answers.size-1].answerDate*/
         }
     }
 

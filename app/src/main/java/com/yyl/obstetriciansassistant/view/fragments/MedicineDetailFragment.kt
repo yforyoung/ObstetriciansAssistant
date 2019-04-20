@@ -24,8 +24,9 @@ class MedicineDetailFragment : Fragment() {
 
     private fun initData() {
         val medicine:Medicine= activity!!.intent!!.getBundleExtra(VALUE).getSerializable(VALUE) as Medicine
-        medicine_detail_title.text=medicine.medicienName
-        val s=medicine.medicineIntroduce
+        medicine_detail_title.text=medicine.name
+        medicine_detail_english_name.text=medicine.englishName
+        val s=medicine.introduce
         val re= URLDecoder.decode(s, "utf-8")
         medicine_detail_content.text=re
 

@@ -29,8 +29,8 @@ class HomeMedicineAdapter(var list:List<Medicine>): RecyclerView.Adapter<HomeMed
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
         p0.itemView.tag=p1
         with(p0.itemView){
-            medicine_name.text=list[p1].medicienName
-            medicine_content.text=list[p1].medicineIntroduce
+            medicine_name.text=list[p1].name
+            medicine_content.text=list[p1].introduce
         }
 
     }

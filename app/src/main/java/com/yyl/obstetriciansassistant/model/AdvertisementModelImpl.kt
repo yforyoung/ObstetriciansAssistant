@@ -3,9 +3,14 @@ package com.yyl.obstetriciansassistant.model
 import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.util.Log
+import android.widget.ImageView
+import com.bumptech.glide.Glide
 import com.google.gson.reflect.TypeToken
+import com.yyl.obstetriciansassistant.App
 import com.yyl.obstetriciansassistant.SingleTon
 import com.yyl.obstetriciansassistant.beans.Adv
 import com.yyl.obstetriciansassistant.beans.Advertisement
@@ -23,8 +28,17 @@ class AdvertisementModelImpl : AdvertisementModel {
         }
     }
 
-    override fun getAdv(): Adv? {
-        return null
+    override fun getAdvImages(json:String,ctx:Context): List<ImageView>? {
+        val responseData =
+            SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(json,object :TypeToken<ResponseData<List<Adv>>>(){}.type)
+        val list = responseData.data
+        val imgList= arrayListOf<ImageView>()
+        for (adv in list!!){
+            val img=ImageView(ctx)
+            Glide.with(ctx).load(adv.adv).into(img)
+            imgList.add(img)
+        }
+        return imgList
     }
 
     private lateinit var ad: Advertisement
