@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initView()
         userModel.getUser()
+        initView()
     }
 
     private fun initView() {
@@ -49,8 +49,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fragmentList.add(HomeFragment())
         fragmentList.add(MedicineFragment())
         fragmentList.add(TVFragment())
-        fragmentList.add(CaseFragment())
-        fragmentList.add(QAFragment())
+/*        fragmentList.add(CaseFragment())
+        fragmentList.add(QAFragment())*/
+        fragmentList.add(EssayFragment())
+        fragmentList.add(UserFragment())
 
         val adapter = HomePagerAdapter(supportFragmentManager)
         adapter.fragmentList = fragmentList
