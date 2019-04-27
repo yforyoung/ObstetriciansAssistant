@@ -28,7 +28,14 @@ class CaseFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        initView()
+    }
+
+    private fun initView() {
         initCase()
+        add_case_bt.setOnClickListener {
+
+        }
     }
 
     private fun initCase() {

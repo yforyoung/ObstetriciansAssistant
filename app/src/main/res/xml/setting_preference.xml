@@ -3,6 +3,10 @@
     <PreferenceCategory
             android:title="基本设置">
         <ListPreference android:title="字体大小"
+                        android:defaultValue="小"
+                        android:summary="小"
+                        android:entries="@array/font_size"
+                        android:entryValues="@array/font_size"
                         android:key="prf_font_size"/>
         <SwitchPreference
                 android:key="prf_video_play_auto"

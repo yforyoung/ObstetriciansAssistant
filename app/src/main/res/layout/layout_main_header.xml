@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="136dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
         android:layout_width="56dp"
         android:layout_height="56dp"
+        android:src="@color/colorAccent"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorAccent" />
+         />
 
     <TextView
         android:id="@+id/username"

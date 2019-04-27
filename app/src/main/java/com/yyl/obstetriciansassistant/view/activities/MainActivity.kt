@@ -8,18 +8,22 @@ import android.support.v4.app.Fragment
 import android.support.v4.view.ViewPager
 import android.view.Gravity
 import android.view.MenuItem
+import com.yyl.obstetriciansassistant.MyCollectionActivity
 import com.yyl.obstetriciansassistant.R
+import com.yyl.obstetriciansassistant.beans.User
 import com.yyl.obstetriciansassistant.jump2Activity
 import com.yyl.obstetriciansassistant.model.UserModelImpl
 import com.yyl.obstetriciansassistant.view.adapter.HomePagerAdapter
 import com.yyl.obstetriciansassistant.view.fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_main_content.*
+import kotlinx.android.synthetic.main.layout_main_header.view.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     BottomNavigationView.OnNavigationItemSelectedListener, ViewPager.OnPageChangeListener {
 
     private val userModel = UserModelImpl()
+    private lateinit var user:User
 
     override fun onPageScrollStateChanged(p0: Int) {
     }
@@ -35,14 +39,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        user=userModel.getUser()
         initView()
-        userModel.getUser()
+
     }
 
     private fun initView() {
         setSupportActionBar(main_toolbar)
         supportActionBar!!.title = ""
         navigation_view.setNavigationItemSelectedListener(this)
+
+        with(navigation_view.getHeaderView(0)){
+            username.text=user.name
+            doctor_position.text=user.position
+            edit_user_message.text=user.hospital
+        }
 
 
         val fragmentList = ArrayList<Fragment>()
@@ -86,6 +97,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 jump2Activity(this, SettingActivity::class.java)
                 //  navigation_view.menu.findItem(R.id.navigation_settings).actionView= View.inflate(this,R.layout.menu_item_badge,null)
             }
+
+            R.id.navigation_exit->{
+                userModel.logout()
+                jump2Activity(this,LoadActivity::class.java)
+                finish()
+            }
+
+            R.id.navigation_collection->{
+                jump2Activity(this,MyCollectionActivity::class.java)
+            }
+
+            R.id.navigation_question->{
+                jump2Activity(this,MyCollectionActivity::class.java)
+            }
+
             R.id.menu_home -> {
                 home_viewpager.currentItem = 0
             }

@@ -43,7 +43,6 @@ class SplashActivity : AppCompatActivity() {
 
     private fun showAd(json:String) {
         val ad= adModel.getAdv(json)
-
         val url = ad!!.adv
         Glide.with(this@SplashActivity).load(url).error(R.mipmap.ic_launcher).into(splash_ad_img)
 

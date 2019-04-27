@@ -1,6 +1,7 @@
 ﻿package com.yyl.obstetriciansassistant.view.fragments
 
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.support.v4.app.Fragment
 import android.text.Html
 import android.text.method.ScrollingMovementMethod
@@ -11,6 +12,7 @@ import com.yyl.obstetriciansassistant.R
 import com.yyl.obstetriciansassistant.VALUE
 import com.yyl.obstetriciansassistant.beans.Essay
 import com.yyl.obstetriciansassistant.toast
+import com.yyl.obstetriciansassistant.utils.SpfUtils
 import kotlinx.android.synthetic.main.fragment_essay_detail.*
 import java.net.URLDecoder
 
@@ -41,6 +43,12 @@ class EssayDetailFragment : Fragment() {
 
     private fun initView() {
         essay_detail_content.movementMethod = ScrollingMovementMethod.getInstance()
+        val font=PreferenceManager.getDefaultSharedPreferences(activity).getString("prf_font_size","小")
+        when(font){
+            "大"->essay_detail_content.textSize=32.0f
+            "中"->essay_detail_content.textSize=20.0f
+            "小"->essay_detail_content.textSize=14.0f
+        }
 
         /*收藏文章*/
         essay_detail_star.setOnClickListener {

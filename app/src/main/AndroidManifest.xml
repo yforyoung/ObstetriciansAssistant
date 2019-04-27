@@ -15,10 +15,13 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".MyCollectionActivity">
+        </activity>
+        <activity android:name=".view.activities.MyQuestionActivity">
+        </activity>
         <activity android:name=".view.activities.RegisterActivity">
         </activity>
         <activity android:name=".view.activities.LoadActivity">
-
         </activity>
         <activity android:name=".view.activities.DetailActivity">
         </activity>

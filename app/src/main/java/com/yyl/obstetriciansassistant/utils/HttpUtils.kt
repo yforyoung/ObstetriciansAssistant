@@ -76,16 +76,21 @@ class HttpUtils private constructor() {
             .url(url)
             .build()
 
-        val job = GlobalScope.async {
-            client.newCall(request).execute()
-        }
-        val response = job.await()
-        if (response.isSuccessful) {
-            val json = response.body()!!.string()
-            log(json)
-            return json
-        } else {
-            log(response.message())
+        try {
+
+            val job = GlobalScope.async {
+                client.newCall(request).execute()
+            }
+            val response = job.await()
+            if (response.isSuccessful) {
+                val json = response.body()!!.string()
+                log(json)
+                return json
+            } else {
+                log(response.message())
+            }
+        } catch (e: IOException) {
+            toast(e.toString())
         }
         return ""
     }

@@ -1,12 +1,12 @@
 package com.yyl.obstetriciansassistant.beans
 
-import java.util.*
+import com.google.gson.annotations.SerializedName
 
 class Video {
     lateinit var id:String
     lateinit var title:String
     lateinit var url:String
-    var searchTime:Int=0
-    lateinit var uploadDate:Date
-    lateinit var uploader:User
+    lateinit var search:String
+    @SerializedName("createtime")
+    lateinit var createTime:String
 }

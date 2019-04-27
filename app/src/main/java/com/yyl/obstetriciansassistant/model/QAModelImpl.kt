@@ -48,7 +48,7 @@ class QAModelImpl : QAModel {
         param["questionsid"] = id
         param["content"] = content
         param["userid"] = SingleTon.instance.user!!.id
-        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/dellikes", param)
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/answerquestions", param)
         if (SingleTon.instance.gson.fromJson(json, ResponseData::class.java).retcode == 1)
             return true
         return false
@@ -66,6 +66,23 @@ class QAModelImpl : QAModel {
         param["userquestionsid"] = id
         param["userid"] = SingleTon.instance.user!!.id
         HttpUtils.instance.doPostAsync("$REQUEST_URL/likes", param)
+    }
+
+     suspend fun getAnswers(id: String):ResponseData<List<Answer>>{
+         val param = HashMap<String, String>()
+         param["userid"] = SingleTon.instance.user!!.id
+         param["id"] = id
+
+         val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/getcomment", param)
+/*
+         val res = SingleTon.instance.gson.fromJson<ResponseData<List<Answer>>>(
+             json,
+             object : TypeToken<ResponseData<List<Answer>>>() {}.type
+         )*/
+         return SingleTon.instance.gson.fromJson<ResponseData<List<Answer>>>(
+             json,
+             object : TypeToken<ResponseData<List<Answer>>>() {}.type
+         )
     }
 
     override suspend fun getAnswer(id: String): List<Answer> {

@@ -19,7 +19,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt" line="38" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt" line="53" mnemonic="9" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -27,55 +27,57 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fc8544a-327d-4f0a-88ff-9889337c97bf" name="Default" comment="QA、Case基础布局和假数据">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/CaseT.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/QuestionType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/SearchResultEssay.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AnswerAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_like.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_like_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_like.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_add_question_edit_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_add_question.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_answer.xml" afterDir="false" />
+    <list default="true" id="6fc8544a-327d-4f0a-88ff-9889337c97bf" name="Default" comment="部分网络数据获取">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/MyCollectionActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModelImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/TVAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_exit_to_app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_collection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_question.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Answer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Answer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Essay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Essay.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObstetriciansAssistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ObstetriciansAssistant.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Medicine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Medicine.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Video.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Video.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AnswerExpandAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeEssayAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeEssayAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeMedicineAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeMedicineAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/MedicineAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/MedicineAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SplashActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_case.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_case.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_medicine_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_medicine_detail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tv.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tv.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_main_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_main_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_main_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_main_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/navigation_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,14 +101,14 @@
     <session id="496464920">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.8" value="9" />
+          <entry key="project.open.time.8" value="10" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -115,10 +117,10 @@
           <entry key="gradle" value="5" />
           <entry key="html" value="5" />
           <entry key="java" value="39" />
-          <entry key="kt" value="530" />
+          <entry key="kt" value="593" />
           <entry key="png" value="4" />
           <entry key="properties" value="2" />
-          <entry key="xml" value="189" />
+          <entry key="xml" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -128,27 +130,27 @@
           <entry key="HTML" value="5" />
           <entry key="Image" value="4" />
           <entry key="JAVA" value="39" />
-          <entry key="Kotlin" value="530" />
+          <entry key="Kotlin" value="593" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="189" />
+          <entry key="XML" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="24" />
           <entry key="java" value="98" />
-          <entry key="kt" value="28655" />
-          <entry key="txt" value="400" />
-          <entry key="xml" value="8286" />
+          <entry key="kt" value="31234" />
+          <entry key="txt" value="417" />
+          <entry key="xml" value="9221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="24" />
           <entry key="JAVA" value="98" />
-          <entry key="Kotlin" value="28655" />
-          <entry key="PLAIN_TEXT" value="400" />
-          <entry key="XML" value="8286" />
+          <entry key="Kotlin" value="31234" />
+          <entry key="PLAIN_TEXT" value="417" />
+          <entry key="XML" value="9221" />
         </counts>
       </usages-collector>
     </session>
@@ -156,35 +158,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-              <folding>
-                <element signature="e#55#798#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1275">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_add_question.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="175">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_progress_bar.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="37" selection-start-line="9" selection-end-line="10" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -195,10 +193,10 @@
         <option value="Kotlin Interface" />
         <option value="valueResourceFile" />
         <option value="Class" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -221,6 +219,7 @@
       <find>hospitalAdapter</find>
       <find>setHotEssay</find>
       <find>List</find>
+      <find>Glide</find>
     </findStrings>
     <replaceStrings>
       <replace>G</replace>
@@ -2641,65 +2640,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/RegisterSpinnerAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RegisterActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/SpfUtils.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AdPagerAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Essay.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/SearchResultEssay.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_medicine_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeEssayAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Medicine.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/CaseT.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/Extends.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Answer.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AnswerExpandAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/selector_like.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_answer.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AnswerAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_case.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/shape_add_question_edit_bg.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/QuestionType.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_progress_bar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_add_question.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_medicine_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_answer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/navigation_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_exit_to_app_black_24dp.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_main_header.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SplashActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Medicine.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_tv_.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/TVAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tv.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_case.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_main_content.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Video.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="620" />
-    <option name="y" value="87" />
+    <option name="x" value="455" />
+    <option name="y" value="50" />
     <option name="width" value="1200" />
-    <option name="height" value="863" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2741,88 +2740,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="activities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="adapter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2870,7 +2788,17 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2881,22 +2809,23 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\drawable" />
-      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\raw" />
-      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\assets" />
-    </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="com.yyl.obstetriciansassistant.beans" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\assets" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.yyl.obstetriciansassistant.view.fragments" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.yyl.obstetriciansassistant" />
       <recent name="com.yyl.obstetriciansassistant.view.activities" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\assets" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\drawable" />
+      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\raw" />
+      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3072,12 +3001,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555747574202</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="部分网络数据获取">
+      <created>1555784008162</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555784008162</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Build Variants" order="1" side_tool="true" />
@@ -3086,7 +3021,7 @@
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.1997319" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.1997319" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.75886524" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.71914893" />
@@ -3094,22 +3029,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.32993197" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" weight="0.32993197" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" weight="0.5319149" />
-      <window_info anchor="bottom" id="Logcat" order="9" sideWeight="0.49932975" weight="0.6269504" />
+      <window_info anchor="bottom" id="Logcat" order="9" sideWeight="0.49932975" weight="0.56170213" />
       <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49865952" weight="0.31205675" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Gradle" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Preview" order="8" visible="true" weight="0.24798928" />
+      <window_info anchor="right" id="Preview" order="8" weight="0.24798928" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -3122,246 +3057,164 @@
     <MESSAGE value="搜索页面" />
     <MESSAGE value="基本布局和简单数据加载" />
     <MESSAGE value="登陆注册页面、splash页面、网络请求简单处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="登陆注册页面、splash页面、网络请求简单处理" />
+    <MESSAGE value="部分网络数据获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="部分网络数据获取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt</url>
-          <line>83</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_medicine_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1208">
-          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1225">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/test.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeMedicineAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeEssayAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Medicine.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#46#123#0" expanded="true" />
-          </folding>
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/CaseAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/CaseT.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="71">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="71">
+          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/SingleTon.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Adv.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#116#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="71">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/AndroidSDK/sources/android-28/android/widget/ExpandableListView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SplashActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/Extends.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseDetailFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AnswerExpandAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-end-line="29" />
-          <folding>
-            <element signature="e#53#407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Answer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="e#46#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
-          <folding>
-            <element signature="e#55#696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/selector_like.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
+        <state relative-caret-position="400">
+          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="575">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Medicine.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding>
+            <element signature="e#46#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/Extends.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SearchActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="38" column="87" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -3372,178 +3225,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_main_header.xml">
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="249">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AnswerAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#53#336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_answer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_case.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_add_question_edit_bg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/RegisterSpinnerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="400">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="418">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RegisterActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="36">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state relative-caret-position="330">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/QuestionType.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/TVAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="500">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/b8815e48fb45e94821287365bd9ce8623f459ac7/kotlin-stdlib-1.3.21-sources.jar!/kotlin/collections/TypeAliases.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tv.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_question.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_collection.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/MyCollectionActivity.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_case.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_main_content.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#46#407#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="175">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="42" />
+        <state relative-caret-position="41">
+          <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_qa.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/AdPagerAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="167" column="36" selection-start-line="167" selection-start-column="36" selection-end-line="167" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Video.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModelImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml">
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-          <folding>
-            <element signature="e#46#456#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_progress_bar.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="37" selection-start-line="9" selection-end-line="10" />
+        <state relative-caret-position="175">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-          <folding>
-            <element signature="e#55#798#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_add_question.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

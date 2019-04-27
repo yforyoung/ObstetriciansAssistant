@@ -13,4 +13,5 @@ interface UserModel{
     fun getHospitalId(i:Int):String
     fun getPositionId(i:Int):String
     fun getClazzId(i:Int):String
+    fun logout()
 }

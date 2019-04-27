@@ -62,6 +62,7 @@
                     android:id="@+id/qa_detail_answer_sort"
                     android:entries="@array/answerSortType"
                     android:layout_alignParentEnd="true"
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             <TextView

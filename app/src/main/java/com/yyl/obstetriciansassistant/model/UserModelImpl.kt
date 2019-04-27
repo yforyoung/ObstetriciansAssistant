@@ -8,6 +8,11 @@ import com.yyl.obstetriciansassistant.beans.*
 import com.yyl.obstetriciansassistant.utils.SpfUtils
 
 class UserModelImpl : UserModel {
+    override fun logout() {
+        SpfUtils.instance.putString(STRING_USER,"")
+        SpfUtils.instance.putBoolean(STRING_IS_LOGIN,false)
+    }
+
     override fun getHospitalId(i: Int): String {
         return registerBefore.hostpitaldata[i].id
     }

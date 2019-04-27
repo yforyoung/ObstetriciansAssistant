@@ -5,19 +5,19 @@ import android.os.Bundle
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
-import com.yyl.obstetriciansassistant.MEDICINE
-import com.yyl.obstetriciansassistant.R
+import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Medicine
-import com.yyl.obstetriciansassistant.jump2Activity
 import com.yyl.obstetriciansassistant.model.MedicineModelImpl
 import com.yyl.obstetriciansassistant.view.adapter.MedicineAdapter
 import kotlinx.android.synthetic.main.activity_risk_more.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class RiskMoreActivity : AppCompatActivity() {
     private lateinit var adapter: MedicineAdapter
     private val riskMedicineModel = MedicineModelImpl()
     private lateinit var initial:String
-    private lateinit var list:List<Medicine>
+    private var list= arrayListOf<Medicine>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,11 +39,28 @@ class RiskMoreActivity : AppCompatActivity() {
 
     private fun initData() {
         initial=intent!!.getStringExtra("initial")
-        list=riskMedicineModel.getRiskMedicineListFromInitail(initial)
+        list.clear()
+        list.addAll(riskMedicineModel.getRiskMedicineListFromInitail(initial))
+
     }
 
     private fun initMedicine() {
         adapter = MedicineAdapter(list)
+        GlobalScope.launch {
+            list.clear()
+            val re=riskMedicineModel.getInitial(initial)
+
+
+            GlobalScope.launch(UI) {
+                if(re.retcode==1){
+                    list.addAll(re.data!!)
+                    adapter.notifyDataSetChanged()
+                }else{
+                    toast(re.retmsg)
+                }
+
+            }
+        }
         adapter.onItemClickListener = object : MedicineAdapter.OnItemClickListener {
             override fun onItemClick(v: View, position: Int) {
                 //TODO 显示medicine信息页面

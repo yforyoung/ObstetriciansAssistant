@@ -49,12 +49,15 @@ class QADetailFragment : Fragment() {
             if (s.isNotEmpty()) {
                 progress_bar.visibility = View.VISIBLE
                 GlobalScope.launch {
-                    if (qaModel.addAnswer(question.id, s))
+                    if (qaModel.addAnswer(question.id, s)) {
                         refreshAnswer()
+
+                    }
                     else{
                         GlobalScope.launch (UI){
                             toast("回答失败！")
                             progress_bar.visibility=View.GONE
+
                         }
                     }
                 }
@@ -77,13 +80,16 @@ class QADetailFragment : Fragment() {
             override fun onLikeClick(v: View, position: Int) {
                 val answer = list[position]
                 if (answer.type != "是") {
-                    answer.type = "否"
+                    answer.type = "是"
                     GlobalScope.launch {
                         qaModel.setLike(answer.id)
                     }
                     answer.collection = (Integer.parseInt(answer.collection) + 1).toString()
                 } else {
-                    answer.type = "是"
+                    answer.type = "否"
+/*
+                    v.isSelected=true
+*/
                     GlobalScope.launch {
                         qaModel.unLike(answer.id)
                     }
@@ -99,11 +105,19 @@ class QADetailFragment : Fragment() {
     private fun refreshAnswer() {
         list.clear()
         GlobalScope.launch {
-            list.addAll(qaModel.getAnswer(question.id))
+            val re=qaModel.getAnswers(question.id)
             GlobalScope.launch(UI) {
-                adapter.notifyDataSetChanged()
-                qa_detail_answer_count.text = "${list.size} 个回答"
+                if (re.retcode==1){
+                    list.addAll(re.data!!)
+                    adapter.notifyDataSetChanged()
+                    qa_detail_answer_count.text = "${list.size} 个回答"
+                    add_answer_edit.clearFocus()
+                    add_answer_edit.setText("")
+                }else{
+                    toast("暂时没有回答哦")
+                }
                 progress_bar.visibility = View.GONE
+
             }
         }
     }

@@ -11,4 +11,9 @@
         <item>按时间升序</item>
         <item>按时间降序</item>
     </array>
+    <array name="font_size">
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </array>
 </resources>

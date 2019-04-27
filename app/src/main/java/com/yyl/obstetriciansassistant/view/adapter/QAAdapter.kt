@@ -32,6 +32,8 @@ class QAAdapter(val list: List<Question>):RecyclerView.Adapter<QAAdapter.ViewHol
             tag=p1
             qa_title.text=question.title
             qa_content.text=question.content
+            latest_answer.tooltipText=question.createDate
+
             /*
             answer_count.text= question.answers.size.toString()
             view_count.text=question.viewCount.toString()

@@ -20,6 +20,7 @@ class LoadActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_load)
         if (SpfUtils.instance.getBoolean(STRING_IS_LOGIN,false)!!){
             jump2Activity(this,MainActivity::class.java)
+            finish()
         }
         initView()
     }
@@ -36,6 +37,7 @@ class LoadActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.load_bt->{
                 login()
+
             }
         }
     }
@@ -64,6 +66,7 @@ class LoadActivity : AppCompatActivity(), View.OnClickListener {
     private fun loadFromJson(json:String) {
         if (userModel.isLoadSuccess(json)){
             jump2Activity(this@LoadActivity, MainActivity::class.java)
+            this@LoadActivity.finish()
         }else{
             toast(userModel.getErrorMessage())
         }

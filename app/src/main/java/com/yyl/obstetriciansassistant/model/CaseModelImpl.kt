@@ -12,14 +12,14 @@ import kotlin.collections.HashMap
 
 class CaseModelImpl : CaseModel {
     override suspend fun getCases(): List<Case> {
-        val params = HashMap<String, String>()
+      /*  val params = HashMap<String, String>()
         params["id"] = SingleTon.instance.user!!.id
         val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/selectpatientrecord", params)
         val responseData=SingleTon.instance.gson.fromJson<ResponseData<List<Case>>>(json,
             object :TypeToken<ResponseData<List<Case>>>(){}.type)
         return responseData.data!!
-
-       /* val date= Date(119, 4, 1)
+*/
+        val date= Date(119, 4, 1)
         val s= DateFormat.getDateInstance().format(date)
         val c1 = Case(1, s, s, "超长的中文名有十个字", "resonresonresonresonresonresonresonresonresonresonreson", "treatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatment")
         val c2 = Case(1, s, s, "test naem", "reson", "treatment")
@@ -28,7 +28,7 @@ class CaseModelImpl : CaseModel {
         val c5 = Case(1, s, s, "test naem", "resonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonreson", "treatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatmenttreatment")
         val c6 = Case(1, s, s, "test naem", "resonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonresonreson", "treatment")
 
-        return arrayListOf(c1, c2, c3, c4, c5, c6)*/
+        return arrayListOf(c1, c2, c3, c4, c5, c6)
     }
 
     override fun deleteCase(id: Int): Boolean {
