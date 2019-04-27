@@ -60,8 +60,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fragmentList.add(HomeFragment())
         fragmentList.add(MedicineFragment())
         fragmentList.add(TVFragment())
-        fragmentList.add(CaseFragment())
-        fragmentList.add(QAFragment())
+/*        fragmentList.add(CaseFragment())
+        fragmentList.add(QAFragment())*/
+        fragmentList.add(EssayFragment())
+        fragmentList.add(UserFragment())
 
         val adapter = HomePagerAdapter(supportFragmentManager)
         adapter.fragmentList = fragmentList
