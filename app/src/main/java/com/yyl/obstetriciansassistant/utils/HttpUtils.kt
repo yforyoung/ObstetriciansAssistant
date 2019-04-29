@@ -80,14 +80,13 @@ class HttpUtils private constructor() {
             client.newCall(request).execute()
         }
         val response = job.await()
+
         if (response.isSuccessful) {
             val json = response.body()!!.string()
             log(json)
             return json
-        } else {
-            log(response.message())
         }
-        return ""
+        return "{\"retcode\":0,\"retmsg\":\"${response.message()}\",data:\"\"}"
     }
 
     interface HttpCallBack {

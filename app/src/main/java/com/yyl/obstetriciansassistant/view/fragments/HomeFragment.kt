@@ -28,7 +28,7 @@ import kotlinx.coroutines.launch
 import java.util.HashMap
 
 class HomeFragment : Fragment() {
-    private val list = arrayListOf<ImageView>()
+    private val imgList = arrayListOf<ImageView>()
     private val delayMills: Long = 5000
 
     private var essayList = arrayListOf<Essay>()
@@ -45,9 +45,9 @@ class HomeFragment : Fragment() {
 
     private var handler = Handler {
         if (it.what == 0) {
-            val curr = (ad_viewpager.currentItem + 1) % list.size
+            val curr = (ad_viewpager.currentItem + 1) % imgList.size
             ad_viewpager.currentItem = curr
-            Log.e("TAG", "${ad_viewpager.currentItem}  +   ${list.size}")
+            Log.e("TAG", "${ad_viewpager.currentItem}  +   ${imgList.size}")
             it.target.sendEmptyMessageDelayed(0, delayMills)
         }
         false
@@ -164,10 +164,10 @@ class HomeFragment : Fragment() {
     }
 
     private fun showAd(json: String) {
-        list.clear()
-        list.addAll(adMode.getAdvImages(json, context!!)!!)
+        imgList.clear()
+        imgList.addAll(adMode.getAdvImages(json, context!!)!!)
 
-        for (i in 0..(list.size - 1)) {
+        for (i in 0..(imgList.size - 1)) {
             val img = ImageView(activity)
             img.setBackgroundResource(R.drawable.shape_circle_viewpager_bg)
             val param = LinearLayout.LayoutParams(
@@ -183,7 +183,7 @@ class HomeFragment : Fragment() {
             point_group.addView(img)
         }
 
-        adAdapter = AdPagerAdapter(list, ad_viewpager)
+        adAdapter = AdPagerAdapter(imgList, ad_viewpager)
         ad_viewpager.adapter = adAdapter
 
     }

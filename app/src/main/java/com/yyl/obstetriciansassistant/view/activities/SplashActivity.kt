@@ -27,7 +27,27 @@ class SplashActivity : AppCompatActivity() {
     private fun initAdvertisement() {
         //获取广告页并显示
 
-        val map=HashMap<String,String>()
+        GlobalScope.launch(UI) {
+            val re=adModel.getAdvResponse()
+            if (re.retcode==1){
+                val url = re.data!![0].adv.trim()
+
+                Glide.with(this@SplashActivity).load(url).error(R.mipmap.ic_launcher).into(splash_ad_img)
+            }else{
+                Glide.with(this@SplashActivity).load(R.mipmap.pic_adv_splash).error(R.mipmap.ic_launcher).into(splash_ad_img)
+
+            }
+            //3秒跳转至主页面
+            timer = Timer()
+            timer.schedule(object : TimerTask() {
+                override fun run() {
+                    jump2Activity(this@SplashActivity, LoadActivity::class.java)
+                    finish()
+                }
+            }, 3000)
+        }
+
+        /*val map=HashMap<String,String>()
         map["type"] = "启动页"
         HttpUtils.instance.doPost(
             "$REQUEST_URL/getadvertisement",
@@ -37,11 +57,11 @@ class SplashActivity : AppCompatActivity() {
                      showAd(json)
                    }
                 }
-            })
+            })*/
 
     }
 
-    private fun showAd(json:String) {
+ /*   private fun showAd(json:String) {
         val ad= adModel.getAdv(json)
 
         val url = ad!!.adv
@@ -56,7 +76,7 @@ class SplashActivity : AppCompatActivity() {
             }
         }, 3000)
     }
-
+*/
     private fun initView() {
         jump_ad_text_bt.setOnClickListener {
             jump2Activity(this, LoadActivity::class.java)

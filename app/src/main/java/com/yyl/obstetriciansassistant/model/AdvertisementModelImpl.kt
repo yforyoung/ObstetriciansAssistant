@@ -11,15 +11,18 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.google.gson.reflect.TypeToken
 import com.yyl.obstetriciansassistant.App
+import com.yyl.obstetriciansassistant.REQUEST_URL
 import com.yyl.obstetriciansassistant.SingleTon
 import com.yyl.obstetriciansassistant.beans.Adv
 import com.yyl.obstetriciansassistant.beans.Advertisement
 import com.yyl.obstetriciansassistant.beans.ResponseData
+import com.yyl.obstetriciansassistant.utils.HttpUtils
 
 class AdvertisementModelImpl : AdvertisementModel {
     override fun getAdv(json: String): Adv? {
         val responseData =
-                SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(json,object :TypeToken<ResponseData<List<Adv>>>(){}.type)
+            SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(json,
+                object : TypeToken<ResponseData<List<Adv>>>() {}.type)
         val list = responseData.data
         return if (list == null) {
             null
@@ -28,13 +31,23 @@ class AdvertisementModelImpl : AdvertisementModel {
         }
     }
 
-    override fun getAdvImages(json:String,ctx:Context): List<ImageView>? {
+    suspend fun getAdvResponse() :ResponseData<List<Adv>>{
+        val param = HashMap<String, String>()
+        param["type"] = "启动页"
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/getadvertisement", param)
+        return SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(json,
+                object : TypeToken<ResponseData<List<Adv>>>() {}.type)
+    }
+
+    override fun getAdvImages(json: String, ctx: Context): List<ImageView>? {
         val responseData =
-            SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(json,object :TypeToken<ResponseData<List<Adv>>>(){}.type)
+            SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(json,
+                object : TypeToken<ResponseData<List<Adv>>>() {}.type)
         val list = responseData.data
-        val imgList= arrayListOf<ImageView>()
-        for (adv in list!!){
-            val img=ImageView(ctx)
+        val imgList = arrayListOf<ImageView>()
+        for (adv in list!!) {
+            val img = ImageView(ctx)
+            img.scaleType=ImageView.ScaleType.FIT_XY
             Glide.with(ctx).load(adv.adv).into(img)
             imgList.add(img)
         }
