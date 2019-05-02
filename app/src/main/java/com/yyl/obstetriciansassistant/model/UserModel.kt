@@ -3,7 +3,7 @@ package com.yyl.obstetriciansassistant.model
 import com.yyl.obstetriciansassistant.beans.*
 
 interface UserModel{
-    fun getUser():User
+    fun initUser()
     fun setRegisterBefore(json:String)
     fun isLoadSuccess(json: String):Boolean
     fun getErrorMessage():String

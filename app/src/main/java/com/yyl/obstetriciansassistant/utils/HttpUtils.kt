@@ -92,7 +92,7 @@ class HttpUtils private constructor() {
         } catch (e: IOException) {
             toast(e.toString())
         }
-        return ""
+        return "{\"retcode\":0,\"retmsg\":\"${response.message()}\",data:\"\"}"
     }
 
     interface HttpCallBack {

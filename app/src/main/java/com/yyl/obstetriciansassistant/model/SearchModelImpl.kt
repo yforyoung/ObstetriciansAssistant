@@ -1,6 +1,10 @@
 package com.yyl.obstetriciansassistant.model
 
-import com.yyl.obstetriciansassistant.beans.SearchResult
+import com.google.gson.reflect.TypeToken
+import com.yyl.obstetriciansassistant.REQUEST_URL
+import com.yyl.obstetriciansassistant.SingleTon
+import com.yyl.obstetriciansassistant.beans.*
+import com.yyl.obstetriciansassistant.utils.HttpUtils
 
 class SearchModelImpl : SearchModel {
     override fun getHotSearch(): List<SearchResult> {
@@ -30,4 +34,32 @@ class SearchModelImpl : SearchModel {
             else -> arrayListOf()
         }
     }
+
+    suspend fun getMedicineSearch(name: String, riskCode: String?):ResponseData<List<Medicine>> {
+        val param = HashMap<String, String>()
+        param["name"] = name
+        if (riskCode != null)
+            param["riskcode"] = riskCode
+        val json=HttpUtils.instance.doPostAsync("$REQUEST_URL/querymedicine",param)
+        return SingleTon.instance.gson.fromJson(json,object :TypeToken<ResponseData<List<Medicine>>>(){}.type)
+    }
+
+    suspend fun getEssaySearch(name: String, id: String?):ResponseData<List<Essay>> {
+        val param = HashMap<String, String>()
+        param["name"] = name
+        if (id != null)
+            param["id"] = id
+        val json=HttpUtils.instance.doPostAsync("$REQUEST_URL/queryarticle",param)
+        return SingleTon.instance.gson.fromJson(json,object :TypeToken<ResponseData<List<Essay>>>(){}.type)
+    }
+
+    suspend fun getVideoSearch(name: String, id: String?):ResponseData<List<Video>> {
+        val param = HashMap<String, String>()
+        param["name"] = name
+        if (id != null)
+            param["id"] = id
+        val json=HttpUtils.instance.doPostAsync("$REQUEST_URL/queryvideo",param)
+        return SingleTon.instance.gson.fromJson(json,object :TypeToken<ResponseData<List<Video>>>(){}.type)
+    }
+
 }

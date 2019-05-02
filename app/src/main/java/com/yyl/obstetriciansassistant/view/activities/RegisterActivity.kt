@@ -33,37 +33,71 @@ class RegisterActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
 
 
     private fun initView() {
+
+        GlobalScope.launch {
+            if (userModel.setRegisterBefore()){
+                val hospitalAdapter = ArrayAdapter<String>(
+                    this@RegisterActivity,
+                    android.R.layout.simple_list_item_1,
+                    android.R.id.text1,
+                    userModel.getHospitals()
+                )
+                register_hospital_spinner.adapter = hospitalAdapter
+
+                val positionAdapter = ArrayAdapter<String>(
+                    this@RegisterActivity,
+                    android.R.layout.simple_list_item_1,
+                    android.R.id.text1,
+                    userModel.getPositions()
+                )
+                register_position_spinner.adapter = positionAdapter
+
+
+                val clazzAdapter = ArrayAdapter<String>(
+                    this@RegisterActivity,
+                    android.R.layout.simple_list_item_1,
+                    android.R.id.text1,
+                    userModel.getClazz()
+                )
+                register_clazz_spinner.adapter = clazzAdapter
+            }
+        }
+
+/*
         HttpUtils.instance.doPost("$REQUEST_URL/registerbefore", null, object : HttpUtils.HttpCallBack {
             override fun success(json: String) {
                 GlobalScope.launch(UI) {
                     userModel.setRegisterBefore(json)
-                    val hospitalAdapter = ArrayAdapter<String>(
-                        this@RegisterActivity,
-                        android.R.layout.simple_list_item_1,
-                        android.R.id.text1,
-                        userModel.getHospitals()
-                    )
-                    register_hospital_spinner.adapter = hospitalAdapter
+                    if (userModel.setRegisterBefore()){
+                        val hospitalAdapter = ArrayAdapter<String>(
+                            this@RegisterActivity,
+                            android.R.layout.simple_list_item_1,
+                            android.R.id.text1,
+                            userModel.getHospitals()
+                        )
+                        register_hospital_spinner.adapter = hospitalAdapter
 
-                    val positionAdapter = ArrayAdapter<String>(
-                        this@RegisterActivity,
-                        android.R.layout.simple_list_item_1,
-                        android.R.id.text1,
-                        userModel.getPositions()
-                    )
-                    register_position_spinner.adapter = positionAdapter
+                        val positionAdapter = ArrayAdapter<String>(
+                            this@RegisterActivity,
+                            android.R.layout.simple_list_item_1,
+                            android.R.id.text1,
+                            userModel.getPositions()
+                        )
+                        register_position_spinner.adapter = positionAdapter
 
 
-                    val clazzAdapter = ArrayAdapter<String>(
-                        this@RegisterActivity,
-                        android.R.layout.simple_list_item_1,
-                        android.R.id.text1,
-                        userModel.getClazz()
-                    )
-                    register_clazz_spinner.adapter = clazzAdapter
+                        val clazzAdapter = ArrayAdapter<String>(
+                            this@RegisterActivity,
+                            android.R.layout.simple_list_item_1,
+                            android.R.id.text1,
+                            userModel.getClazz()
+                        )
+                        register_clazz_spinner.adapter = clazzAdapter
+                    }
                 }
             }
         })
+*/
     }
 
     private fun initListener() {
@@ -122,31 +156,24 @@ class RegisterActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
                 }else {
                     ne = true
                     register_name_layout.error = ""
-
                 }
             }
 
         })
 
         register_bt.setOnClickListener {
-            val name = register_name.text.toString()
-            val pwd = register_pwd.text.toString()
-
-            val hospitalId = userModel.getHospitalId(register_hospital_spinner.selectedItemPosition)
-            val positionId = userModel.getPositionId(register_position_spinner.selectedItemPosition)
-            val clazzId = userModel.getClazzId(register_clazz_spinner.selectedItemPosition)
-
             val params=HashMap<String,String>()
-            params["name"]=name
-            params["password"]=pwd
-            params["hospitalid"]=hospitalId
-            params["positionid"]=positionId
-            params["departmentid"]=clazzId
+            params["name"]=register_name.text.toString()
+            params["password"]=register_pwd.text.toString()
+            params["hospitalid"]=userModel.getHospitalId(register_hospital_spinner.selectedItemPosition)
+            params["positionid"]=userModel.getPositionId(register_position_spinner.selectedItemPosition)
+            params["departmentid"]=userModel.getClazzId(register_clazz_spinner.selectedItemPosition)
             params["imgstr"]=""
             params["imgname"]="head_pic"
 
             if (ne&&pe&&pce) {
                 progress_bar.visibility=View.VISIBLE
+
                 HttpUtils.instance.doPost("$REQUEST_URL/register", params, object : HttpUtils.HttpCallBack {
                     override fun success(json: String) {
                         GlobalScope.launch(UI) {

@@ -10,7 +10,6 @@ import android.view.Gravity
 import android.view.MenuItem
 import com.yyl.obstetriciansassistant.MyCollectionActivity
 import com.yyl.obstetriciansassistant.R
-import com.yyl.obstetriciansassistant.beans.User
 import com.yyl.obstetriciansassistant.jump2Activity
 import com.yyl.obstetriciansassistant.model.UserModelImpl
 import com.yyl.obstetriciansassistant.view.adapter.HomePagerAdapter
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     BottomNavigationView.OnNavigationItemSelectedListener, ViewPager.OnPageChangeListener {
 
     private val userModel = UserModelImpl()
-    private lateinit var user:User
 
     override fun onPageScrollStateChanged(p0: Int) {
     }
@@ -39,9 +37,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        user=userModel.getUser()
+        userModel.initUser()
         initView()
-
     }
 
     private fun initView() {
@@ -49,6 +46,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar!!.title = ""
         navigation_view.setNavigationItemSelectedListener(this)
 
+        val user=userModel.getUser()
         with(navigation_view.getHeaderView(0)){
             username.text=user.name
             doctor_position.text=user.position
@@ -107,7 +105,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.navigation_collection->{
-                jump2Activity(this,MyCollectionActivity::class.java)
+                jump2Activity(this, MyCollectionActivity::class.java)
             }
 
             R.id.navigation_question->{

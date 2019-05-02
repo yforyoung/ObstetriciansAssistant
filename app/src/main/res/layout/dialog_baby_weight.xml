@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"/>
         <TextView
                 android:id="@+id/except_baby_weight"
-                android:text="2210"
+                android:text=""
                 android:gravity="center"
                 android:textColor="#000"
                 android:layout_marginStart="16dp"
