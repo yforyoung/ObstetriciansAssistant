@@ -76,30 +76,42 @@ class HttpUtils private constructor() {
             .url(url)
             .build()
 
-        try {
 
-            val job = GlobalScope.async {
-                client.newCall(request).execute()
+        val job = GlobalScope.async {
+            try {
+                val response = client.newCall(request).execute()
+                if (response.isSuccessful) {
+                    val json = response.body()!!.string()
+                    log(json)
+                    return@async json
+                } else {
+                    return@async "{\"retcode\":0,\"retmsg\":\"请求超时,请检查网络状态\",data:null}"
+                }
+            }catch (e:IOException){
+                return@async "{\"retcode\":0,\"retmsg\":\"请求超时，请检查网络状态\",data:null}"
             }
-            val response = job.await()
-            if (response.isSuccessful) {
-                val json = response.body()!!.string()
-                log(json)
-                return json
-            } else {
-                log(response.message())
-            }
-        } catch (e: IOException) {
-            toast(e.toString())
         }
-        return "{\"retcode\":0,\"retmsg\":\"${response.message()}\",data:\"\"}"
+        return job.await().toString()
+
+
+        /*   val response = job.await()
+           if (response.isSuccessful) {
+               val json = response.body()!!.string()
+               log(json)
+               return json
+           } else {
+               log(response.message())
+           }
+       } catch (e: IOException) {
+           launch (UI){
+               toast(e.toString())
+           }
+       }
+       return "{\"retcode\":0,\"retmsg\":\"网络请求失败\",data:\"\"}"*/
     }
 
     interface HttpCallBack {
         fun success(json: String)
-/*
-        fun failed()
-*/
     }
 
 

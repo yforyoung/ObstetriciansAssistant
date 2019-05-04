@@ -13,13 +13,21 @@
                 android:defaultValue="true"
                 android:title="视频自动播放"/>
         <SwitchPreference
-            android:key="prf_update_app_auto"
-            android:title="自动下载更新"
-            android:defaultValue="true"/>
+                android:key="prf_update_app_auto"
+                android:title="自动下载更新"
+                android:defaultValue="true"/>
         <Preference
-            android:key="prf_clear_catch"
-            android:summary="包括图片和视频"
-            android:title="清除缓存"/>
+                android:key="prf_clear_catch"
+                android:summary="包括图片和视频"
+                android:title="清除缓存"/>
+        <SwitchPreference
+                android:defaultValue="true"
+                android:title="自动检测更新"
+                android:key="prf_check_auto_update"/>
+        <Preference
+                android:summary="当前版本 V1.0"
+                android:key="check_update"
+                android:title="检查更新"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="消息设置">
         <SwitchPreference android:key="prf_shake"
@@ -34,8 +42,8 @@
                           android:key="prf_comment"
                           android:defaultValue="true"/>
 
-        <SwitchPreference android:title="收藏文章更新通知"
-                         android:key="prf_essay_update"
+        <SwitchPreference android:title="点赞通知"
+                          android:key="prf_star"
                           android:defaultValue="true"/>
     </PreferenceCategory>
 
@@ -46,4 +54,10 @@
         <SwitchPreference android:title="收藏文章更新通知"
                           android:key="prf_essay_update"/>
     </PreferenceCategory>-->
+    <PreferenceCategory
+            android:title="用户设置">
+        <Preference
+                android:key="change_pwd"
+                android:title="修改密码"/>
+    </PreferenceCategory>
 </PreferenceScreen>

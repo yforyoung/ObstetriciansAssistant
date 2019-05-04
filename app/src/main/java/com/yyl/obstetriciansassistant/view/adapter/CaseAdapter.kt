@@ -30,8 +30,7 @@ class CaseAdapter(var list:List<Case>) : RecyclerView.Adapter<CaseAdapter.ViewHo
             case_name.text=case.name
             case_reason.text="病因：${case.reason}"
             case_treatment.text="治疗方案：${case.treatment}"
-            case_last_update_date.text="最近更新：${case.updateDate}"
-            case_create_date.text=case.createDate
+            case_create_date.text="创建时间：${case.createDate}"
 
             case_edit.setOnClickListener {
                 onItemClickListener!!.onItemEditClick(case_edit,p1)

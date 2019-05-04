@@ -8,13 +8,11 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.yyl.obstetriciansassistant.R
-import com.yyl.obstetriciansassistant.UI
-import com.yyl.obstetriciansassistant.VALUE
+import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Answer
 import com.yyl.obstetriciansassistant.beans.Question
 import com.yyl.obstetriciansassistant.model.QAModelImpl
-import com.yyl.obstetriciansassistant.toast
+import com.yyl.obstetriciansassistant.model.SearchModelImpl
 import com.yyl.obstetriciansassistant.view.adapter.AnswerAdapter
 import kotlinx.android.synthetic.main.fragment_qa_detail.*
 import kotlinx.android.synthetic.main.layout_progress_bar.*
@@ -36,11 +34,15 @@ class QADetailFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         question = activity!!.intent.getBundleExtra(VALUE).getSerializable(VALUE) as Question
+        question.createName=SingleTon.instance.user!!.name
         initView()
     }
 
 
     private fun initView() {
+
+        initQuestion()
+
         qa_detail_content.text = question.content
         qa_detail_title.text = question.title
         qa_detail_questioner.text = question.createName
@@ -51,7 +53,6 @@ class QADetailFragment : Fragment() {
                 GlobalScope.launch {
                     if (qaModel.addAnswer(question.id, s)) {
                         refreshAnswer()
-
                     }
                     else{
                         GlobalScope.launch (UI){
@@ -65,6 +66,10 @@ class QADetailFragment : Fragment() {
         }
 
         initAnswer()
+
+    }
+
+    private fun initQuestion() {
 
     }
 

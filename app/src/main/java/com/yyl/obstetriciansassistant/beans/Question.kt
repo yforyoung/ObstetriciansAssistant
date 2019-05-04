@@ -13,6 +13,7 @@ class Question : Serializable {
     @SerializedName("createtime")
     lateinit var createDate: String
     lateinit var title:String
+    lateinit var number:String
 
 
 }

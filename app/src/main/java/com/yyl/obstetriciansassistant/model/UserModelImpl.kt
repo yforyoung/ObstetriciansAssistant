@@ -10,7 +10,12 @@ import com.yyl.obstetriciansassistant.utils.HttpUtils
 import com.yyl.obstetriciansassistant.utils.SpfUtils
 
 class UserModelImpl : UserModel {
-    override fun getUser(): User {
+    private var registerBefore=RegisterBefore()
+    private var user: User?=null
+    private lateinit var msg: String
+
+
+    fun getUser(): User {
         return user!!
     }
 
@@ -18,12 +23,6 @@ class UserModelImpl : UserModel {
         SpfUtils.instance.putString(STRING_USER,"")
         SpfUtils.instance.putBoolean(STRING_IS_LOGIN,false)
     }
-
-
-    private var registerBefore=RegisterBefore()
-    private var user: User?=null
-    private lateinit var msg: String
-
 
     override fun getHospitalId(i: Int): String {
         return registerBefore.hostpitaldata[i].id

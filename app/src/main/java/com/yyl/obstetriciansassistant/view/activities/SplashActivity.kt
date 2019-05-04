@@ -5,7 +5,6 @@ import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.model.AdvertisementModelImpl
-import com.yyl.obstetriciansassistant.utils.HttpUtils
 import kotlinx.android.synthetic.main.activity_splash.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -28,13 +27,13 @@ class SplashActivity : AppCompatActivity() {
         //获取广告页并显示
 
         GlobalScope.launch(UI) {
-            val re=adModel.getAdvResponse()
+            val re=adModel.getStartAdvResponse()
             if (re.retcode==1){
                 val url = re.data!![0].adv.trim()
 
-                Glide.with(this@SplashActivity).load(url).error(R.mipmap.ic_launcher).into(splash_ad_img)
+                Glide.with(this@SplashActivity).load(url).into(splash_ad_img)
             }else{
-                Glide.with(this@SplashActivity).load(R.mipmap.pic_adv_splash).error(R.mipmap.ic_launcher).into(splash_ad_img)
+                Glide.with(this@SplashActivity).load(R.mipmap.pic_adv_splash).into(splash_ad_img)
 
             }
             //3秒跳转至主页面

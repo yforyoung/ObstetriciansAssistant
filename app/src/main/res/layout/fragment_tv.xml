@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <!--
-        <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:id="@+id/tv_list_view"
-                android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/root"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#00000000"
+             android:orientation="vertical">
 
-        </android.support.v7.widget.RecyclerView>
-    -->
-
-    <com.kk.taurus.playerbase.widget.BaseVideoView
-            android:id="@+id/video_view"
-            android:layout_width="match_parent"
-            android:visibility="gone"
-            android:layout_height="match_parent">
-
-    </com.kk.taurus.playerbase.widget.BaseVideoView>
     <android.support.v7.widget.RecyclerView
             android:id="@+id/tv_list_view"
             android:layout_width="match_parent"
-                                            android:layout_height="match_parent">
+            android:layout_height="match_parent" />
 
-    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+            android:id="@+id/tv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+            android:id="@+id/tv_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:alpha="0">
+
+        <ImageView
+                android:id="@+id/tv_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_back" />
+
+        <ImageView
+                android:id="@+id/tv_mute"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/icon_mute" />
+    </FrameLayout>
+</FrameLayout>

@@ -3,37 +3,34 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
-                                             android:paddingBottom="4dp"
                                              android:layout_height="wrap_content">
 
-
     <TextView
-            android:text="中文测试TextViewTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxEms="10"
-            android:maxLines="1"
-            android:ellipsize="end"
-            android:id="@+id/essay_title" android:textStyle="bold"
-            android:textColor="#000" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent" android:textSize="18sp"/>
-    <TextView
-            android:text="TextVTextViewiew中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试"
+            android:text="柔性管理在妇科护理中的八零八"
             android:layout_width="0dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:maxLines="4"
-            android:ellipsize="end"
-            android:id="@+id/essay_content" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/essay_title"/>
+            android:id="@+id/essay_title"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/essay_author"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
     <TextView
-            android:text="中文测试中文测试中文测试"
+            android:text="author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:maxEms="6"
-            android:ellipsize="end"
-            android:id="@+id/essay_author" app:layout_constraintStart_toEndOf="@+id/essay_title"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintTop_toTopOf="@+id/essay_title" android:textStyle="bold"/>
+            android:id="@+id/essay_author" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/essay_title"
+            app:layout_constraintStart_toStartOf="@+id/essay_title"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/essay_source" app:layout_constraintStart_toEndOf="@+id/essay_author"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/essay_author" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
 </android.support.constraint.ConstraintLayout>

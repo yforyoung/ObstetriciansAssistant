@@ -2,8 +2,8 @@ package com.yyl.obstetriciansassistant.model
 
 import com.yyl.obstetriciansassistant.beans.Case
 
+
 interface CaseModel {
-    suspend fun getCases(): List<Case>
-    fun deleteCase(id: Int): Boolean
-    fun editCase(id: Int): Boolean
+    suspend fun deleteCase(id: String): Boolean
+    suspend fun editCase(id: String, case:Case): Boolean
 }

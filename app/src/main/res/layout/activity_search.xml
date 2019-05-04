@@ -7,39 +7,31 @@
               android:background="#f2f2f2"
               android:orientation="vertical"
               tools:context=".view.activities.SearchActivity">
-    <RelativeLayout
+    <LinearLayout
             android:background="#fff"
             android:layout_width="match_parent"
             android:paddingEnd="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:layout_height="46dp">
-        <SearchView
-                android:id="@+id/search_edit"
-                android:layout_toStartOf="@id/search_spinner"
-                android:layout_width="match_parent"
-                android:queryHint="请输入关键字"
-                android:layout_marginEnd="8dp"
-                android:iconifiedByDefault="false"
-                android:padding="8dp"
-                android:layout_height="wrap_content"/>
+
         <Spinner
                 android:id="@+id/search_spinner"
                 android:entries="@array/searchType"
                 android:gravity="center"
-                android:layout_alignParentEnd="true"
-                android:padding="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
+        <EditText
+                android:id="@+id/search_edit"
+                android:hint="请输入关键字"
+                android:singleLine="true"
+                android:gravity="center"
+                android:imeOptions="actionSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
-      <!--  <ImageView
-                android:background="@drawable/ic_search"
-                android:backgroundTint="#b2b2b2"
-                android:layout_alignEnd="@id/search_edit"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="16dp"
-                android:layout_width="24dp" android:layout_height="24dp"/>-->
-    </RelativeLayout>
+    </LinearLayout>
     <LinearLayout
             android:id="@+id/hot_search_title"
             android:orientation="horizontal"

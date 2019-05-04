@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.yyl.obstetriciansassistant.R
 import com.yyl.obstetriciansassistant.beans.Essay
-import kotlinx.android.synthetic.main.item_essay_list.view.*
+import kotlinx.android.synthetic.main.item_home_essay_list.view.*
 
 
 class HomeEssayAdapter(var list: List<Essay>) : RecyclerView.Adapter<HomeEssayAdapter.ViewHolder>() {
@@ -18,7 +18,7 @@ class HomeEssayAdapter(var list: List<Essay>) : RecyclerView.Adapter<HomeEssayAd
     }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
-        val view = LayoutInflater.from(p0.context).inflate(R.layout.item_essay_list, p0, false)
+        val view = LayoutInflater.from(p0.context).inflate(R.layout.item_home_essay_list, p0, false)
         view.setOnClickListener {
             if (onClickListener != null)
                 onClickListener!!.onItemClick(view, view.tag as Int)
@@ -33,15 +33,15 @@ class HomeEssayAdapter(var list: List<Essay>) : RecyclerView.Adapter<HomeEssayAd
 
         p0.itemView.tag = p1
         with(p0.itemView) {
-            essay_title.text = list[p1].title
-            essay_author.text = list[p1].source
+            home_essay_title.text = list[p1].title
+            home_essay_author.text = list[p1].source
             val content = Html.fromHtml(list[p1].content).toString()
 
            /* if (content.length > 100)
                 essay_content.text = content.substring(0, 100)
             else
                 essay_content.text = list[p1].content*/
-            essay_content.text=content
+            home_essay_content.text=content
         }
 
     }

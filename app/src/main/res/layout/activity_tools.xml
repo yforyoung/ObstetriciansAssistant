@@ -9,7 +9,17 @@
         tools:context=".view.activities.ToolsActivity">
 
 
-        <include layout="@layout/layout_toolbar_load"/>
+        <include layout="@layout/layout_toolbar"/>
 
-    <include layout="@layout/dialog_baby_weight"/>
+    <include
+            android:visibility="gone"
+            android:id="@+id/baby_weight_layout"
+            layout="@layout/dialog_baby_weight"/>
+    <include
+            android:id="@+id/except_date_layout"
+            layout="@layout/dialog_except_date"/>
+    <include
+            android:id="@+id/healthy_weight_layout"
+            android:visibility="gone"
+            layout="@layout/dialog_healthy_weight"/>
 </LinearLayout>

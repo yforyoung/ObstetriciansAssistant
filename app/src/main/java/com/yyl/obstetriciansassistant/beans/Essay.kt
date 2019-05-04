@@ -16,14 +16,8 @@ class Essay :Serializable{
     @SerializedName("createtime")
     lateinit var createTime:String
 
-    lateinit var source:String
+    var source:String=""
     lateinit var type: String
-
-    constructor()
-    constructor(title: String, author: String, content: String) {
-        this.title = title
-        this.content = content
-        this.author = author
-    }
+    lateinit var address:String
 
 }

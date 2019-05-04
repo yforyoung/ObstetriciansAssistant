@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.view.fragments.*
-import kotlinx.android.synthetic.main.layout_toolbar.*
+import kotlinx.android.synthetic.main.layout_toolbar_search.*
 
 class DetailActivity : AppCompatActivity() {
     private val caseDetailFragment = CaseDetailFragment()

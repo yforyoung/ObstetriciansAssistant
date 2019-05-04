@@ -7,4 +7,7 @@
     <color name="colorPrimaryDark">#0277BD</color>
     <color name="colorAccent">#d81b60</color>
     <color name="colorTheme">#00BCD4</color>
+
+    <color name="controller_bg_dark">#66000000</color>
+    <color name="controller_bg_light">#00000000</color>
 </resources>

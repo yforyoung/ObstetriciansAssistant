@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_home"
         android:title="首页"
-        android:icon="@drawable/ic_case"
+        android:icon="@drawable/ic_home"
         />
-    <item android:id="@+id/menu_risk"
+    <item android:id="@+id/menu_medicine"
         android:title="风险资料"
-        android:icon="@drawable/ic_risk"
+        android:icon="@drawable/ic_data"
         />
     <item android:id="@+id/menu_tv"
         android:title="优生TV"
         android:icon="@drawable/ic_tv"
         />
-    <item android:id="@+id/menu_case"
-        android:title="病历"
-        android:icon="@drawable/ic_case"
-        />
-    <item android:id="@+id/menu_qa"
+    <item android:id="@+id/menu_essay"
         android:title="问答"
         android:icon="@drawable/ic_qa"
+        />
+    <item android:id="@+id/menu_mine"
+        android:title="我的"
+        android:icon="@drawable/ic_person"
         />
 </menu>

@@ -33,11 +33,11 @@ class SearchAdapter(val list:List<SearchResult>): RecyclerView.Adapter<SearchAda
             search_name.text=searchResult.title
 
             search_type.text=when(searchResult.type){
-                0->"文章"
-                1->"药物"
-                2->"视频"
-                3->"病例"
-                4->"问题"
+                "article"->"文章"
+                "medicine"->"药物"
+                "video"->"视频"
+               /* 3->"病例"
+                4->"问题"*/
                 else -> ""
             }
         }
