@@ -1,14 +1,35 @@
 package com.yyl.obstetriciansassistant.model
 
-import android.content.Context
-import android.graphics.drawable.Drawable
-import android.widget.ImageView
+import com.google.gson.reflect.TypeToken
+import com.yyl.obstetriciansassistant.REQUEST_URL
+import com.yyl.obstetriciansassistant.SingleTon
 import com.yyl.obstetriciansassistant.beans.Adv
-import com.yyl.obstetriciansassistant.beans.Advertisement
+import com.yyl.obstetriciansassistant.beans.ResponseData
+import com.yyl.obstetriciansassistant.log
+import com.yyl.obstetriciansassistant.utils.HttpUtils
 
-interface AdvertisementModel {
-    fun getAdvertisement(type: Int): Advertisement
-    fun visitAdvertisement(c: Context)
-    fun getAdvImages(json:String,ctx:Context): List<ImageView>?
-    fun getAdv(json: String): Adv?
+class AdvertisementModel {
+
+    suspend fun getStartAdvResponse(): ResponseData<List<Adv>> {
+        val param = HashMap<String, String>()
+        param["type"] = "启动页"
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/getadvertisement", param)
+        log(json)
+        return SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(
+            json,
+            object : TypeToken<ResponseData<List<Adv>>>() {}.type
+        )
+    }
+
+    suspend fun getHomeAdvResponse(): ResponseData<List<Adv>> {
+        val param = HashMap<String, String>()
+        param["type"] = "首页"
+        val json = HttpUtils.instance.doPostAsync("$REQUEST_URL/getadvertisement", param)
+        log(json)
+        return SingleTon.instance.gson.fromJson<ResponseData<List<Adv>>>(
+            json,
+            object : TypeToken<ResponseData<List<Adv>>>() {}.type
+        )
+    }
+
 }

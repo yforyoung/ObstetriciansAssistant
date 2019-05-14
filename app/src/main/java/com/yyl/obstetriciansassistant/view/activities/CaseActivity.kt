@@ -4,10 +4,11 @@ import android.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.view.MenuItem
 import android.view.View
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Case
-import com.yyl.obstetriciansassistant.model.CaseModelImpl
+import com.yyl.obstetriciansassistant.model.CaseModel
 import com.yyl.obstetriciansassistant.view.adapter.CaseAdapter
 import kotlinx.android.synthetic.main.activity_case.*
 import kotlinx.android.synthetic.main.layout_empty_list.*
@@ -17,13 +18,24 @@ import kotlinx.coroutines.launch
 class CaseActivity : AppCompatActivity() {
 
     private val list = arrayListOf<Case>()
-    private val caseModel = CaseModelImpl()
+    private val caseModel = CaseModel()
     private lateinit var adapter: CaseAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_case)
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         initView()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item!!.itemId) {
+            android.R.id.home -> {
+                finish()
+            }
+        }
+        return true
     }
 
     private fun initView() {
@@ -54,7 +66,7 @@ class CaseActivity : AppCompatActivity() {
                                 list.removeAt(position)
                                 adapter.notifyDataSetChanged()
                             } else {
-                                toast("delete failed $position")
+                                toast("删除失败")
                             }
                         }
 

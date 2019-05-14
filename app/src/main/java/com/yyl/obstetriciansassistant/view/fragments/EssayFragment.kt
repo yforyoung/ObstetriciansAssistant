@@ -9,16 +9,16 @@ import android.view.View
 import android.view.ViewGroup
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Essay
-import com.yyl.obstetriciansassistant.model.EssayModelImpl
-import com.yyl.obstetriciansassistant.model.SearchModelImpl
-import com.yyl.obstetriciansassistant.view.activities.DetailActivity
+import com.yyl.obstetriciansassistant.model.EssayModel
+import com.yyl.obstetriciansassistant.model.SearchModel
+import com.yyl.obstetriciansassistant.view.activities.EssayDetailActivity
 import com.yyl.obstetriciansassistant.view.adapter.EssayAdapter
 import kotlinx.android.synthetic.main.fragment_essay.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class EssayFragment : Fragment() {
-    private val essayModel = EssayModelImpl()
+    private val essayModel = EssayModel()
     val list = arrayListOf<Essay>()
     lateinit var adapter: EssayAdapter
 
@@ -39,9 +39,12 @@ class EssayFragment : Fragment() {
         adapter.onItemClickListener=object :EssayAdapter.OnItemClickListener{
             override fun onItemClick(v: View, position: Int) {
                 GlobalScope.launch (UI){
-                    val re=SearchModelImpl().getEssaySearch(list[position].title,list[position].id)
+                    val re=SearchModel().getEssaySearch(list[position].title,list[position].id)
                     if (re.retcode==1){
+/*
                         activity!!.jump2Activity(activity!!, DetailActivity::class.java, ESSAY, re.data!![0])
+*/
+                        activity!!.jump2Activity(activity!!, EssayDetailActivity::class.java, ESSAY, re.data!![0])
                     }
                 }
 

@@ -2,24 +2,18 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
             android:title="基本设置">
-        <ListPreference android:title="字体大小"
-                        android:defaultValue="小"
-                        android:summary="小"
-                        android:entries="@array/font_size"
-                        android:entryValues="@array/font_size"
-                        android:key="prf_font_size"/>
+        <ListPreference
+                android:title="字体大小"
+                android:defaultValue="小"
+                android:summary="小"
+                android:entries="@array/font_size"
+                android:entryValues="@array/font_size"
+                android:key="prf_font_size"/>
         <SwitchPreference
                 android:key="prf_video_play_auto"
                 android:defaultValue="true"
                 android:title="视频自动播放"/>
-        <SwitchPreference
-                android:key="prf_update_app_auto"
-                android:title="自动下载更新"
-                android:defaultValue="true"/>
-        <Preference
-                android:key="prf_clear_catch"
-                android:summary="包括图片和视频"
-                android:title="清除缓存"/>
+
         <SwitchPreference
                 android:defaultValue="true"
                 android:title="自动检测更新"
@@ -30,30 +24,12 @@
                 android:title="检查更新"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="消息设置">
-        <SwitchPreference android:key="prf_shake"
-                          android:defaultValue="true"
-                          android:title="震动"/>
-        <SwitchPreference android:key="prf_voice"
-                          android:defaultValue="true"
-                          android:title="消息声音"/>
-    </PreferenceCategory>
-    <PreferenceCategory android:title="免打扰设置">
-        <SwitchPreference android:title="回答通知"
-                          android:key="prf_comment"
+        <SwitchPreference android:title="震动及响铃"
+                          android:key="prf_notify_ring"
                           android:defaultValue="true"/>
 
-        <SwitchPreference android:title="点赞通知"
-                          android:key="prf_star"
-                          android:defaultValue="true"/>
     </PreferenceCategory>
 
-    <!--<PreferenceCategory android:title="其他">
-        <Preference android:title="回答通知"
-                          android:key="prf_comment"/>
-
-        <SwitchPreference android:title="收藏文章更新通知"
-                          android:key="prf_essay_update"/>
-    </PreferenceCategory>-->
     <PreferenceCategory
             android:title="用户设置">
         <Preference

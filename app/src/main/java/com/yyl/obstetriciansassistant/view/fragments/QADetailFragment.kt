@@ -11,8 +11,7 @@ import android.view.ViewGroup
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Answer
 import com.yyl.obstetriciansassistant.beans.Question
-import com.yyl.obstetriciansassistant.model.QAModelImpl
-import com.yyl.obstetriciansassistant.model.SearchModelImpl
+import com.yyl.obstetriciansassistant.model.QAModel
 import com.yyl.obstetriciansassistant.view.adapter.AnswerAdapter
 import kotlinx.android.synthetic.main.fragment_qa_detail.*
 import kotlinx.android.synthetic.main.layout_progress_bar.*
@@ -24,8 +23,9 @@ class QADetailFragment : Fragment() {
 
     private lateinit var question: Question
     private var list = arrayListOf<Answer>()
-    private val qaModel = QAModelImpl()
+    private val qaModel = QAModel()
     private lateinit var adapter: AnswerAdapter
+    private var sort=1
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_qa_detail, container, false)
@@ -34,18 +34,13 @@ class QADetailFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         question = activity!!.intent.getBundleExtra(VALUE).getSerializable(VALUE) as Question
-        question.createName=SingleTon.instance.user!!.name
         initView()
     }
 
 
     private fun initView() {
-
         initQuestion()
 
-        qa_detail_content.text = question.content
-        qa_detail_title.text = question.title
-        qa_detail_questioner.text = question.createName
         add_answer_bt.setOnClickListener {
             val s = add_answer_edit.text.toString()
             if (s.isNotEmpty()) {
@@ -53,11 +48,10 @@ class QADetailFragment : Fragment() {
                 GlobalScope.launch {
                     if (qaModel.addAnswer(question.id, s)) {
                         refreshAnswer()
-                    }
-                    else{
-                        GlobalScope.launch (UI){
+                    } else {
+                        GlobalScope.launch(UI) {
                             toast("回答失败！")
-                            progress_bar.visibility=View.GONE
+                            progress_bar.visibility = View.GONE
 
                         }
                     }
@@ -69,8 +63,14 @@ class QADetailFragment : Fragment() {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private fun initQuestion() {
-
+        GlobalScope.launch(UI) {
+            question = qaModel.getQuestion(question.id).data!![0]
+            qa_detail_content.text = "问题描述：${question.content}"
+            qa_detail_title.text = question.title
+            qa_detail_questioner.text = "提问者：${question.createName}"
+        }
     }
 
     private fun initAnswer() {
@@ -109,21 +109,45 @@ class QADetailFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     private fun refreshAnswer() {
         list.clear()
-        GlobalScope.launch {
-            val re=qaModel.getAnswers(question.id)
-            GlobalScope.launch(UI) {
-                if (re.retcode==1){
-                    list.addAll(re.data!!)
-                    adapter.notifyDataSetChanged()
-                    qa_detail_answer_count.text = "${list.size} 个回答"
-                    add_answer_edit.clearFocus()
-                    add_answer_edit.setText("")
-                }else{
-                    toast("暂时没有回答哦")
-                }
-                progress_bar.visibility = View.GONE
-
+        val comparator = Comparator<Answer> { o1, o2 ->
+            if (sort==1){
+                if (o1.createTime>o2.createTime)
+                    return@Comparator 1
+                else return@Comparator -1
+            }else{
+                if (o1.createTime>o2.createTime)
+                    return@Comparator -1
+                else return@Comparator 1
             }
+
+        }
+        qa_detail_answer_sort.setOnClickListener {
+            if (sort==1){
+                sort=0
+                qa_detail_answer_sort.text="逆序查看"
+            }else{
+                sort=1
+                qa_detail_answer_sort.text="顺序查看"
+            }
+            list.sortWith(comparator)
+            adapter.notifyDataSetChanged()
+        }
+
+        GlobalScope.launch(UI) {
+            val re = qaModel.getAnswers(question.id)
+            if (re.retcode == 1) {
+                list.addAll(re.data!!)
+                list.sortWith(comparator)
+                adapter.notifyDataSetChanged()
+                qa_detail_answer_count.text = "${list.size} 个回答"
+                add_answer_edit.clearFocus()
+                add_answer_edit.setText("")
+            } else {
+                toast("暂时没有回答哦")
+            }
+            progress_bar.visibility = View.GONE
+
+
         }
     }
 

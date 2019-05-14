@@ -48,43 +48,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             <TextView
-                    android:id="@+id/latest_answer"
+                    android:id="@+id/question_create_date"
                     android:text="2019-4-1"
                     android:layout_marginEnd="32dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
         </LinearLayout>
-    <!--    <LinearLayout
-                android:id="@+id/qa_ll"
-                android:orientation="horizontal"
-                android:layout_marginEnd="16dp"
-                android:layout_width="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_height="wrap_content">
-            <TextView
-                    android:text="回答"
-                    android:layout_marginEnd="8dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            <TextView
-                    android:id="@+id/answer_count"
-                    android:text="10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            <TextView
-                    android:text="浏览"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            <TextView
-                    android:id="@+id/view_count"
-                    android:text="10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-        </LinearLayout>-->
     </RelativeLayout>
     <View
             android:background="#e2e2e2"

@@ -1,12 +1,14 @@
 package com.yyl.obstetriciansassistant.utils
 
 import android.content.Context
+import android.preference.PreferenceManager
 import com.yyl.obstetriciansassistant.App
 import com.yyl.obstetriciansassistant.SPF_NAME
 
 class SpfUtils private constructor() {
     private val editor=App.context.getSharedPreferences(SPF_NAME,Context.MODE_PRIVATE).edit()
     private val spf=App.context.getSharedPreferences(SPF_NAME,Context.MODE_PRIVATE)
+    private val spfDefault=PreferenceManager.getDefaultSharedPreferences(App.context)
 
     companion object {
         val instance:SpfUtils= SpfUtils()
@@ -36,5 +38,9 @@ class SpfUtils private constructor() {
 
     fun getBoolean(key:String,default:Boolean):Boolean?{
         return spf.getBoolean(key,default)
+    }
+
+    fun getSpfBoolean(key:String,default: Boolean):Boolean{
+        return spfDefault.getBoolean(key,default)
     }
 }

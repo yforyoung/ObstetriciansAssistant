@@ -12,6 +12,4 @@ class SingleTon private constructor() {
     companion object {
         val instance: SingleTon = SingleTon()
     }
-
-
 }

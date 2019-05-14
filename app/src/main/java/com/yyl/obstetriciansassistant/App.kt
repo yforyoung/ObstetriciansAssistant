@@ -8,10 +8,9 @@ import cn.jpush.android.api.JPushInterface
 import com.kk.taurus.playerbase.config.PlayerConfig
 import com.kk.taurus.playerbase.config.PlayerLibrary
 import com.kk.taurus.playerbase.entity.DecoderPlan
-import com.yyl.obstetriciansassistant.myview.play.ExoMediaPlayer
+import com.yyl.obstetriciansassistant.customizeview.play.ExoMediaPlayer
 
 class App : Application() {
-
 
     override fun onCreate() {
         super.onCreate()
@@ -25,6 +24,7 @@ class App : Application() {
         PlayerConfig.setUseDefaultNetworkEventProducer(true)
         //初始化库
         PlayerLibrary.init(this)
+
     }
 
 

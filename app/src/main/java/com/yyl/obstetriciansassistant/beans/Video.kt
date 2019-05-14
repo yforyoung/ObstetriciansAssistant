@@ -10,4 +10,6 @@ class Video :Serializable{
     lateinit var search:String
     @SerializedName("createtime")
     lateinit var createTime:String
+    @SerializedName("imgurl")
+    lateinit var imgUrl:String
 }

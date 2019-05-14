@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.yyl.obstetriciansassistant.*
-import com.yyl.obstetriciansassistant.model.AdvertisementModelImpl
+import com.yyl.obstetriciansassistant.model.AdvertisementModel
 import kotlinx.android.synthetic.main.activity_splash.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -12,7 +12,7 @@ import java.util.*
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var timer: Timer
-    private val adModel = AdvertisementModelImpl()
+    private val adModel = AdvertisementModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

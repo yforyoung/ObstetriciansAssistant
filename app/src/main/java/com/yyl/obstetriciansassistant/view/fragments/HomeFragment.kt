@@ -5,19 +5,18 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.jude.rollviewpager.hintview.ColorPointHintView
 import com.yyl.obstetriciansassistant.*
-import com.yyl.obstetriciansassistant.App.Companion.TAG
 import com.yyl.obstetriciansassistant.beans.Adv
 import com.yyl.obstetriciansassistant.beans.Essay
 import com.yyl.obstetriciansassistant.beans.Medicine
 import com.yyl.obstetriciansassistant.model.*
 import com.yyl.obstetriciansassistant.utils.HttpUtils
 import com.yyl.obstetriciansassistant.view.activities.DetailActivity
+import com.yyl.obstetriciansassistant.view.activities.EssayDetailActivity
 import com.yyl.obstetriciansassistant.view.activities.SearchActivity
 import com.yyl.obstetriciansassistant.view.adapter.HomeEssayAdapter
 import com.yyl.obstetriciansassistant.view.adapter.HomeMedicineAdapter
@@ -38,10 +37,10 @@ class HomeFragment : Fragment() {
     private lateinit var adAdapter: RollPagerAdapter
     private lateinit var essayAdapter: HomeEssayAdapter
 
-    private val essayModel = EssayModelImpl()
-    private val medicineModel: MedicineModel = MedicineModelImpl()
+    private val essayModel = EssayModel()
+    private val medicineModel = MedicineModel()
 
-    private val adMode = AdvertisementModelImpl()
+    private val adMode = AdvertisementModel()
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -68,7 +67,6 @@ class HomeFragment : Fragment() {
         medicineAdapter = HomeMedicineAdapter(medicineModel.getHotRiskMedicine())
         medicineAdapter.setOnClickListener(object : HomeMedicineAdapter.OnClickListener {
             override fun onItemClick(v: View, position: Int) {
-                Log.e(TAG, "risk item click $position")
                 activity!!.jump2Activity(activity!!, DetailActivity::class.java, MEDICINE, medicineList[position])
             }
         })
@@ -97,8 +95,10 @@ class HomeFragment : Fragment() {
         homeEssayAdapter = essayAdapter
         homeEssayAdapter.setOnClickListener(object : HomeEssayAdapter.OnClickListener {
             override fun onItemClick(v: View, position: Int) {
-                Log.e(TAG, "essay item click $position")
+                activity!!.jump2Activity(activity!!,EssayDetailActivity::class.java, ESSAY,essayList[position])
+/*
                 activity!!.jump2Activity(activity!!, DetailActivity::class.java, ESSAY, essayList[position])
+*/
             }
         })
         home_essay_list_view.adapter = homeEssayAdapter
@@ -143,9 +143,5 @@ class HomeFragment : Fragment() {
             adAdapter.notifyDataSetChanged()
         }
 
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
     }
 }

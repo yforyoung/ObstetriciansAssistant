@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.yyl.obstetriciansassistant.*
-import com.yyl.obstetriciansassistant.model.UserModelImpl
+import com.yyl.obstetriciansassistant.model.UserModel
 import com.yyl.obstetriciansassistant.utils.HttpUtils
 import com.yyl.obstetriciansassistant.utils.SpfUtils
 import kotlinx.android.synthetic.main.activity_load.*
@@ -13,7 +13,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class LoadActivity : AppCompatActivity(), View.OnClickListener {
-    private val userModel=UserModelImpl()
+    private val userModel=UserModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

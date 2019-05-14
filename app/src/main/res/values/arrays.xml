@@ -4,7 +4,6 @@
         <item>文章</item>
         <item>药物</item>
         <item>视频</item>
-        <item>问题</item>
     </array>
     <array name="answerSortType">
         <item>按时间升序</item>

@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
+import android.view.MenuItem
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.view.fragments.*
-import kotlinx.android.synthetic.main.layout_toolbar_search.*
+import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
     private val caseDetailFragment = CaseDetailFragment()
-    private val essayDetailFragment = EssayDetailFragment()
     private val medicineDetailFragment = MedicineDetailFragment()
     private val qaDetailFragment = QADetailFragment()
     private lateinit var fragmentManager: FragmentManager
@@ -30,10 +30,16 @@ class DetailActivity : AppCompatActivity() {
     private fun initFragment() {
 
         transaction = fragmentManager.beginTransaction()
+        supportActionBar!!.title = when (intent.getStringExtra(TYPE)) {
+            CASE -> "病例详情"
+            ESSAY -> "文章"
+            MEDICINE -> "药物"
+            QA -> "问题详情"
+            else -> ""
+        }
 
         val temp = when (intent.getStringExtra(TYPE)) {
             CASE -> caseDetailFragment
-            ESSAY -> essayDetailFragment
             MEDICINE -> medicineDetailFragment
             QA -> qaDetailFragment
             //TV_VIDEO -> tvDetailFragment
@@ -50,12 +56,18 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun initToolbar() {
-        others_search_bt.setOnClickListener {
-            jump2Activity(this, SearchActivity::class.java)
-        }
+        detail_toolbar.title = ""
+        setSupportActionBar(detail_toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        others_toolbar_back_bt.setOnClickListener {
-            finish()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item!!.itemId) {
+            android.R.id.home -> {
+                finish()
+            }
         }
+        return true
     }
 }

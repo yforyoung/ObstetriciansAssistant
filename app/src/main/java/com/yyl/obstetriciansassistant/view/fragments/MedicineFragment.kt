@@ -9,18 +9,13 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.yyl.obstetriciansassistant.R
-import com.yyl.obstetriciansassistant.UI
-import com.yyl.obstetriciansassistant.beans.Medicine
 import com.yyl.obstetriciansassistant.model.MedicineModel
-import com.yyl.obstetriciansassistant.model.MedicineModelImpl
 import com.yyl.obstetriciansassistant.view.activities.RiskMoreActivity
 import kotlinx.android.synthetic.main.fragment_risk.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 class MedicineFragment : Fragment() {
     private lateinit var adapter: ArrayAdapter<String>
-    private val medicineModel: MedicineModel = MedicineModelImpl()
+    private val medicineModel = MedicineModel()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_risk, container, false)
     }

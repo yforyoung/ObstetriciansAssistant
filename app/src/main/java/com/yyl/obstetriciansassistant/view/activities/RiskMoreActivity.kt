@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Medicine
-import com.yyl.obstetriciansassistant.model.MedicineModelImpl
+import com.yyl.obstetriciansassistant.model.MedicineModel
 import com.yyl.obstetriciansassistant.view.adapter.MedicineAdapter
 import kotlinx.android.synthetic.main.activity_risk_more.*
 import kotlinx.coroutines.GlobalScope
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 
 class RiskMoreActivity : AppCompatActivity() {
     private lateinit var adapter: MedicineAdapter
-    private val riskMedicineModel = MedicineModelImpl()
+    private val riskMedicineModel = MedicineModel()
     private lateinit var initial:String
     private var list= arrayListOf<Medicine>()
 
@@ -39,16 +39,13 @@ class RiskMoreActivity : AppCompatActivity() {
 
     private fun initData() {
         initial=intent!!.getStringExtra("initial")
-        list.clear()
-        list.addAll(riskMedicineModel.getRiskMedicineListFromInitail(initial))
-
     }
 
     private fun initMedicine() {
         adapter = MedicineAdapter(list)
         GlobalScope.launch {
             list.clear()
-            val re=riskMedicineModel.getInitial(initial)
+            val re=riskMedicineModel.getMedicineFromInitial(initial)
 
 
             GlobalScope.launch(UI) {

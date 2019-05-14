@@ -20,4 +20,11 @@ class Essay :Serializable{
     lateinit var type: String
     lateinit var address:String
 
+    constructor(title: String, id: String, type: String) {
+        this.title = title
+        this.id = id
+        this.type = type
+    }
+
+    constructor()
 }

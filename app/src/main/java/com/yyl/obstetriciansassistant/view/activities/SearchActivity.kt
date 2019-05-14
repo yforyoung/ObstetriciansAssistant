@@ -11,18 +11,22 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.TextView
 import com.yyl.obstetriciansassistant.*
+import com.yyl.obstetriciansassistant.beans.SearchHistory
 import com.yyl.obstetriciansassistant.beans.SearchResult
-import com.yyl.obstetriciansassistant.model.SearchModelImpl
+import com.yyl.obstetriciansassistant.model.SearchModel
 import com.yyl.obstetriciansassistant.view.adapter.SearchAdapter
+import com.yyl.obstetriciansassistant.view.adapter.SearchHistoryAdapter
 import kotlinx.android.synthetic.main.activity_search.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class SearchActivity : AppCompatActivity() {
     private lateinit var adapter: SearchAdapter
-    private val searModel = SearchModelImpl()
+    private val searModel = SearchModel()
     private var type: String = ESSAY
     private var list = arrayListOf<SearchResult>()
+    private lateinit var historyAdapter: SearchHistoryAdapter
+    private var historyList = arrayListOf<SearchHistory>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,21 +42,20 @@ class SearchActivity : AppCompatActivity() {
         search_edit.setOnEditorActionListener(object : TextView.OnEditorActionListener {
             override fun onEditorAction(v: TextView?, actionId: Int, event: KeyEvent?): Boolean {
                 if ((actionId == 0 || actionId == 3) && event != null) {
-                    GlobalScope.launch(UI) {
-                        list.clear()
-                        list.addAll(searModel.getSearchResult(search_edit.text.toString(), "", type))
-                        adapter.notifyDataSetChanged()
-                    }
+                    search(search_edit.text.toString(), type)
                 }
                 return false
             }
         })
 
-        search_edit.addTextChangedListener(object :TextWatcher{
+        search_edit.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                if(s.toString()==""){
-                    hot_search_title.visibility=View.VISIBLE
+                if (s.toString() == "") {
+                    hot_search_title.visibility = View.VISIBLE
+                    search_history_list.visibility = View.VISIBLE
+                    empty_list_view.visibility = View.GONE
                     initHotSearchData()
+                    refreshHistory()
                 }
             }
 
@@ -61,13 +64,16 @@ class SearchActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 log(s.toString())
-                if (s==""){
-                    hot_search_title.visibility=View.VISIBLE
+                if (s == "") {
+                    hot_search_title.visibility = View.VISIBLE
                     initHotSearchData()
-                }else{
+                    refreshHistory()
+                } else {
                     list.clear()
                     adapter.notifyDataSetChanged()
-                    hot_search_title.visibility=View.GONE
+                    hot_search_title.visibility = View.GONE
+                    search_history_list.visibility = View.GONE
+
                 }
             }
 
@@ -81,7 +87,7 @@ class SearchActivity : AppCompatActivity() {
                     when (item.type) {
                         "article" -> {
                             val re = searModel.getEssaySearch(item.title, item.id)
-                            jump2Activity(this@SearchActivity, DetailActivity::class.java, ESSAY, re.data!![0])
+                            jump2Activity(this@SearchActivity, EssayDetailActivity::class.java, ESSAY, re.data!![0])
                         }
                         "medicine" -> {
                             val re = searModel.getMedicineSearch(item.title, item.id)
@@ -89,7 +95,7 @@ class SearchActivity : AppCompatActivity() {
                         }
                         "video" -> {
                             val re = searModel.getVideoSearch(item.title, item.id)
-                            jump2Activity(this@SearchActivity, DetailActivity::class.java, TV_VIDEO, re.data!![0])
+                            jump2Activity(this@SearchActivity, TVDetailActivity::class.java, TV_VIDEO, re.data!![0])
                         }
 
                     }
@@ -105,6 +111,24 @@ class SearchActivity : AppCompatActivity() {
 
     }
 
+    private fun search(name: String, type: String) {
+        GlobalScope.launch(UI) {
+            list.clear()
+            list.addAll(searModel.getSearchResult(name, "", type))
+            if (list.size > 0) {
+                empty_list_view.visibility = View.GONE
+            } else {
+                empty_list_view.visibility = View.VISIBLE
+            }
+
+            adapter.notifyDataSetChanged()
+
+        }
+
+        hot_search_title.visibility = View.GONE
+        search_history_list.visibility = View.GONE
+    }
+
     private fun initHotSearchData() {
         GlobalScope.launch(UI) {
             list.clear()
@@ -114,13 +138,15 @@ class SearchActivity : AppCompatActivity() {
     }
 
     private fun initView() {
+
+        initHistory()
+
         search_spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 type = when (position) {
                     0 -> ESSAY
                     1 -> MEDICINE
                     2 -> TV_VIDEO
-                    3 -> QA
                     else -> ESSAY
                 }
             }
@@ -129,5 +155,43 @@ class SearchActivity : AppCompatActivity() {
             }
 
         }
+    }
+
+    private fun initHistory() {
+        historyAdapter = SearchHistoryAdapter(historyList)
+        search_history_list.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        search_history_list.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
+        search_history_list.adapter = historyAdapter
+
+        historyAdapter.onItemClickListener = object : SearchHistoryAdapter.OnItemClickListener {
+            override fun onItemClick(v: View, position: Int) {
+                search_edit.setText(historyList[position].title)
+                search_spinner.setSelection(
+                    when (historyList[position].type) {
+                        ESSAY -> 0
+                        MEDICINE -> 1
+                        QA -> 2
+                        else -> 0
+                    }
+                )
+                type=historyList[position].type
+                search_edit.requestFocus()
+            }
+
+            override fun onDeleteClick(v: View, position: Int) {
+                searModel.deleteSearchHistory(historyList[position].id)
+                historyList.removeAt(position)
+                historyAdapter.notifyDataSetChanged()
+            }
+
+        }
+
+        refreshHistory()
+    }
+
+    private fun refreshHistory() {
+        historyList.clear()
+        historyList.addAll(searModel.getSearchHistory())
+        historyAdapter.notifyDataSetChanged()
     }
 }

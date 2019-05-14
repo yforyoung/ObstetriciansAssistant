@@ -19,7 +19,6 @@ const val CHANGE: Boolean = true
 const val TYPE: String = "type"
 const val VALUE: String = "value"
 const val IS_CHANGE: String = "isChange"
-const val DURATION:Long=500L
 const val VIEW_CASE=0
 const val EDIT_CASE=1
 const val CREATE_CASE=2
@@ -37,6 +36,12 @@ const val STRING_USER:String="user"
 const val BABY_WEIGHT:String="胎儿体重计算器"
 const val EXCEPT_DAY:String="预产期计算器"
 const val HEALTHY_WEIGHT:String="健康体重计算器"
+
+const val DB_NAME:String="obstetriciansAssistant"
+const val VERSION:Int=1
+const val TB_SEARCH_HISTORY:String="tb_search_history"
+const val TB_NOTIFY_HISTORY:String="tb_notify_history"
+
 
 
 fun toast(text: String) = Toast.makeText(App.context, text, Toast.LENGTH_SHORT).show()
@@ -76,5 +81,5 @@ fun Context.jump2Activity(c: Context, cls: Class<*>, f: String, value: Serializa
 
 
 fun Any.log(s:String){
-    Log.e(App.TAG,s)
+    Log.e("young",s)
 }

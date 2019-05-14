@@ -9,14 +9,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Case
-import com.yyl.obstetriciansassistant.model.CaseModelImpl
+import com.yyl.obstetriciansassistant.model.CaseModel
 import kotlinx.android.synthetic.main.fragment_case_detail.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class CaseDetailFragment : Fragment() {
     private var change = 0
-    private var caseModel = CaseModelImpl()
+    private var caseModel = CaseModel()
     private var case: Case? = null
 
 
@@ -93,7 +93,7 @@ class CaseDetailFragment : Fragment() {
         val caseNew = Case()
         caseNew.treatment = case_detail_treatment.text.toString()
         caseNew.reason = case_detail_reason.text.toString()
-        caseNew.name = case_detail_reason.text.toString()
+        caseNew.name = case_detail_name.text.toString()
         caseNew.age = case_detail_age.text.toString().toInt()
         caseNew.tips = case_detail_tips.text.toString()
         caseNew.content = case_detail_depiction.text.toString()
@@ -109,7 +109,7 @@ class CaseDetailFragment : Fragment() {
         val caseNew = Case()
         caseNew.treatment = case_detail_treatment.text.toString()
         caseNew.reason = case_detail_reason.text.toString()
-        caseNew.name = case_detail_reason.text.toString()
+        caseNew.name = case_detail_name.text.toString()
         caseNew.age = case_detail_age.text.toString().trim().toInt()
         caseNew.tips = case_detail_tips.text.toString()
         caseNew.content = case_detail_depiction.text.toString()

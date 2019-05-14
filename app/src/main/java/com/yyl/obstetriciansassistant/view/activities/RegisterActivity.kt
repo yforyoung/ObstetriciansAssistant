@@ -4,7 +4,6 @@ import Decoder.BASE64Encoder
 import android.Manifest
 import android.app.Activity
 import android.content.ContentUris
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -23,7 +22,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.ResponseData
-import com.yyl.obstetriciansassistant.model.UserModelImpl
+import com.yyl.obstetriciansassistant.model.UserModel
 import com.yyl.obstetriciansassistant.utils.HttpUtils
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.layout_progress_bar.*
@@ -35,7 +34,7 @@ import java.io.InputStream
 
 
 class RegisterActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
-    private val userModel = UserModelImpl()
+    private val userModel = UserModel()
     private var ne = false
     private var pe = false
     private var pce = false
@@ -152,7 +151,7 @@ class RegisterActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
 
         }
 
-        GlobalScope.launch {
+        GlobalScope.launch(UI) {
             if (userModel.setRegisterBefore()) {
                 val hospitalAdapter = ArrayAdapter<String>(
                     this@RegisterActivity,
@@ -175,12 +174,11 @@ class RegisterActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
                     userModel.getClazz()
                 )
 
-                launch(UI) {
-                    register_hospital_spinner.adapter = hospitalAdapter
-                    register_position_spinner.adapter = positionAdapter
-                    register_clazz_spinner.adapter = clazzAdapter
 
-                }
+                register_hospital_spinner.adapter = hospitalAdapter
+                register_position_spinner.adapter = positionAdapter
+                register_clazz_spinner.adapter = clazzAdapter
+
             }
         }
 

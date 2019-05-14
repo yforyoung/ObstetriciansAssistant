@@ -1,7 +1,6 @@
 package com.yyl.obstetriciansassistant.view.fragments
 
 import android.annotation.SuppressLint
-import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -12,7 +11,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.yyl.obstetriciansassistant.*
 import com.yyl.obstetriciansassistant.beans.Question
-import com.yyl.obstetriciansassistant.model.QAModelImpl
+import com.yyl.obstetriciansassistant.model.QAModel
 import com.yyl.obstetriciansassistant.view.activities.DetailActivity
 import com.yyl.obstetriciansassistant.view.adapter.QAAdapter
 import kotlinx.android.synthetic.main.dialog_add_question.view.*
@@ -24,7 +23,7 @@ class QAFragment : Fragment() {
     private lateinit var adapter: QAAdapter
     private var list= arrayListOf<Question>()
 
-    private val qaModel = QAModelImpl()
+    private val qaModel = QAModel()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_qa, container, false)

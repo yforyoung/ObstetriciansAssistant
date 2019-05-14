@@ -14,8 +14,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="young" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="JPush" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="CMakeSettings">
@@ -24,133 +24,113 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fc8544a-327d-4f0a-88ff-9889337c97bf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___E__AndroidProjects_ObstetriciansAssistant_app_libs_sun_misc_BASE64Decoder_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_jiguang_sdk_jcore_1_1_8_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_jiguang_sdk_jpush_3_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_7_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_7_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_7_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_7_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_core_r2_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_dash_r2_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_hls_r2_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_r2_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_smoothstreaming_r2_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_ui_r2_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jude_rollviewpager_1_4_6_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_5_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/sun.misc.BASE64Decoder.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/CollectionId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/HotSearch.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/ViewAttr.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/CompleteCover.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/ControllerCover.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/ErrorCover.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/LoadingCover.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/AssistPlayer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/DataInter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/ExoMediaPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/ReceiverGroupManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/VideoUtil.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/CaseActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/EssayAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/RollPagerAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/DataFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gradient.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_replay.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_top_gradient.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_video_player_btn_pause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_video_player_btn_play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_exit_full_screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_full_screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_mute.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_player_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_praise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_qq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_retry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_sinaweibo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_start_play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_video_list_wechat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_wechat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_wechatmoments.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jpush_ic_richpush_actionbar_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jpush_ic_richpush_actionbar_divider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jpush_richpush_btn_selector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jpush_richpush_progressbar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/line.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_play_state.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_case.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/cover_complete.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/cover_controller.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/cover_error.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/cover_loading.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/img_roll_pager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_home_essay_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/jpush_popwin_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/jpush_webview_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_empty_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/push_notification.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/jpush_style.xml" afterDir="false" />
+    <list default="true" id="6fc8544a-327d-4f0a-88ff-9889337c97bf" name="Default" comment="视频遗留问题&#10;通知遗留问题&#10;UI需优化">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Collection.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Notify.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/SearchHistory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Version.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/GuideView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/NotifyModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/receiver/NotifyReceiver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/DatabaseHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/UpdateAppUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/EssayDetailActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/QADetailActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/TVDetailActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/NotifyAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/SearchHistoryAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/TVCommentAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_clear.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_history.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/timg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_essay_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qadetail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tvdetail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_essay_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_qadetail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_change_pwd.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_notify_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_search_history_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tv_comment_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_essay_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_qadetail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_3_7_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObstetriciansAssistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ObstetriciansAssistant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/App.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/Extends.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/Extends.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/MyCollectionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyCollectionActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/SingleTon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/SingleTon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Advertisement.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Article.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/ArticleCollection.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/CaseT.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Comment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Comment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/DoctorPosition.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Essay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Essay.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/SearchResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/SearchResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/HeadPic.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/MedicineCollection.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/RegisterBefore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/RegisterBefore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Retroaction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Risk.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/SearchResultEssay.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Video.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Video.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/ViewAttr.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModelImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/NestedExpandableListView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/CompleteCover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/cover/CompleteCover.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/ControllerCover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/cover/ControllerCover.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/ErrorCover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/cover/ErrorCover.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/cover/LoadingCover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/cover/LoadingCover.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/AssistPlayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/play/AssistPlayer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/DataInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/play/DataInter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/ExoMediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/play/ExoMediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/ReceiverGroupManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/play/ReceiverGroupManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/SpfUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/SpfUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/VideoUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/CaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/CaseActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/DetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/DetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyCollectionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyCollectionActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RegisterActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SearchActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SearchActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SplashActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/ToolsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/ToolsActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/CaseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/CaseAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeEssayAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomeEssayAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/HomePagerAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/SearchAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/SearchAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/QAAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/TVAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/TVAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseDetailFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QAFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/TVFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/UserFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/UserFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_case.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_search_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_search_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_case.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_case.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_load.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_load.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
@@ -158,30 +138,32 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_question.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_question.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tools.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_baby_weight.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_baby_weight.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_except_date.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_except_date.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_case.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cover_complete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/cover_complete.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_case_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_case_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tv.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tv.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_case_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_case_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_essay_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_essay_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_search_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_search_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_qa_list.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_main_content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_main_header.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_progress_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_progress_bar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar_load.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,162 +187,74 @@
     <session id="496464920">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="4" />
+          <entry key="project.closed" value="22" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.8" value="10" />
+          <entry key="project.open.time.8" value="11" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="18" />
-          <entry key="gradle" value="14" />
+          <entry key="class" value="29" />
+          <entry key="gradle" value="21" />
           <entry key="html" value="5" />
-          <entry key="java" value="63" />
-          <entry key="jpg" value="1" />
-          <entry key="kt" value="799" />
-          <entry key="png" value="5" />
+          <entry key="java" value="76" />
+          <entry key="jpg" value="2" />
+          <entry key="kt" value="1152" />
+          <entry key="png" value="13" />
           <entry key="pro" value="1" />
           <entry key="properties" value="5" />
-          <entry key="xml" value="316" />
+          <entry key="xml" value="425" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="18" />
-          <entry key="Groovy" value="14" />
+          <entry key="CLASS" value="29" />
+          <entry key="Groovy" value="21" />
           <entry key="HTML" value="5" />
-          <entry key="Image" value="6" />
-          <entry key="JAVA" value="63" />
-          <entry key="Kotlin" value="799" />
+          <entry key="Image" value="15" />
+          <entry key="JAVA" value="76" />
+          <entry key="Kotlin" value="1152" />
           <entry key="ProGuard File" value="1" />
           <entry key="Properties" value="5" />
-          <entry key="XML" value="316" />
+          <entry key="XML" value="425" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="132" />
-          <entry key="java" value="99" />
-          <entry key="kt" value="42836" />
+          <entry key="gradle" value="134" />
+          <entry key="java" value="149" />
+          <entry key="kt" value="54404" />
           <entry key="properties" value="1" />
-          <entry key="txt" value="521" />
-          <entry key="xml" value="10912" />
+          <entry key="txt" value="551" />
+          <entry key="xml" value="13700" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="132" />
-          <entry key="JAVA" value="99" />
-          <entry key="Kotlin" value="42836" />
-          <entry key="PLAIN_TEXT" value="521" />
+          <entry key="Android Room SQL" value="1" />
+          <entry key="Groovy" value="134" />
+          <entry key="JAVA" value="149" />
+          <entry key="Kotlin" value="54403" />
+          <entry key="PLAIN_TEXT" value="551" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="10912" />
+          <entry key="XML" value="13700" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/CaseAdapter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/CaseActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseDetailFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="122" column="27" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-              <folding>
-                <element signature="e#55#526#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" column="75" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RegisterActivity.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/receiver/NotifyReceiver.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="257" column="33" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#46#378#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_case_detail.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="115" column="39" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/UserFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="530">
+              <caret line="42" column="84" lean-forward="true" selection-start-line="37" selection-start-column="77" selection-end-line="42" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -372,24 +266,16 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="valueResourceFile" />
-        <option value="resourceFile" />
-        <option value="Kotlin File" />
-        <option value="Class" />
         <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hospitalAdapter</find>
-      <find>setHotEssay</find>
-      <find>List</find>
-      <find>Long</find>
-      <find>Long(</find>
-      <find>isSuc</find>
-      <find>Exce</find>
-      <find>adAdapter</find>
       <find>holder</find>
       <find>p0</find>
       <find>MainActivity.</find>
@@ -412,9 +298,16 @@
       <find>Glide</find>
       <find>&gt;0</find>
       <find>caseNew</find>
+      <find>isLandScape</find>
+      <find>add</find>
+      <find>downloadManager</find>
+      <find>play</find>
+      <find>play(</find>
+      <find>getIns</find>
+      <find>notifyModel</find>
+      <find>@color/colorPrimary</find>
     </findStrings>
     <replaceStrings>
-      <replace>N</replace>
       <replace>O</replace>
       <replace>P</replace>
       <replace>Q</replace>
@@ -444,6 +337,7 @@
       <replace>list</replace>
       <replace>my_collection_list_view</replace>
       <replace>case</replace>
+      <replace>#b2</replace>
     </replaceStrings>
     <dirStrings>
       <dir>E:\AndroidProjects\ObstetriciansAssistant\app\src\main\java\com\yyl\obstetriciansassistant</dir>
@@ -2841,62 +2735,62 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SplashActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/bt_logout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_question.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_empty_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_case.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_collection.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/EssayAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Essay.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/service/MyJcomminService.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/receiver/MyJPushMessageReceiver.kt" />
-        <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/SingleTon.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/CollectionId.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/App.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyCollectionActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/UserFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SearchActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_search_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/img_roll_pager.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/RollPagerAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/Extends.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_case_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/CaseAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_case_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/CaseActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseDetailFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Video.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/TVAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/UserFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/NotifyModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/MedicineCollection.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/ReceiverGroupManager.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/myview/play/AssistPlayer.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/DetailActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_essay_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Medicine.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/customizeview/play/DataInter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/SingleTon.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/shape_search_bg.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/icon_bg.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_load.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/RegisterBefore.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RegisterActivity.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Notify.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/NotifyAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/TVDetailActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseDetailFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/NotifyModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/DatabaseHelper.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/receiver/NotifyReceiver.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="256" />
+    <option name="x" value="255" />
     <option name="y" value="135" />
     <option name="width" value="1200" />
     <option name="height" value="865" />
@@ -2942,50 +2836,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -3010,6 +2860,20 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="receiver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="obstetriciansassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
@@ -3043,11 +2907,49 @@
               <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="xml" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="ObstetriciansAssistant" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ObstetriciansAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ObstetriciansAssistant" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -3063,10 +2965,10 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="LMX4C17923006719" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
+    <property name="device.picker.selection" value="Nexus_5X_API_28" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../VideoBaseTest" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -3085,14 +2987,18 @@
       <recent name="com.yyl.obstetriciansassistant" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\drawable" />
       <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\libs" />
-      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\mipmap-xxhdpi" />
       <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\drawable" />
+      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\mipmap-xxhdpi" />
+      <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\libs" />
       <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\values" />
       <recent name="E:\AndroidProjects\ObstetriciansAssistant\app\src\main\res\layout" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3282,7 +3188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556339301830</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="视频遗留问题&#10;通知遗留问题&#10;UI需优化">
+      <created>1556992365546</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556992365546</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3296,26 +3209,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Build Variants" order="1" side_tool="true" />
+      <window_info id="Structure" order="0" sideWeight="0.50070924" side_tool="true" weight="0.22319035" />
+      <window_info id="Build Variants" order="1" sideWeight="0.50070924" side_tool="true" weight="0.22319035" />
       <window_info id="Captures" order="2" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.22319035" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4992908" visible="true" weight="0.1883378" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.75886524" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5134752" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5106383" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.7574468" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.635461" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.46950355" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020107" side_tool="true" weight="0.7446808" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="9" sideWeight="0.49932975" visible="true" weight="0.6042553" />
-      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49798927" weight="0.7446808" />
+      <window_info anchor="bottom" id="Logcat" order="9" sideWeight="0.49932975" weight="0.8028369" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49798927" weight="0.39574468" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
@@ -3330,25 +3244,25 @@
       <window_info anchor="right" id="Preview" order="8" weight="0.24798928" />
     </layout>
     <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Build Variants" order="1" side_tool="true" />
+      <window_info id="Structure" order="0" sideWeight="0.50070924" side_tool="true" weight="0.22319035" />
+      <window_info id="Build Variants" order="1" sideWeight="0.50070924" side_tool="true" weight="0.22319035" />
       <window_info id="Captures" order="2" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.20911528" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.4992908" visible="true" weight="0.22319035" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.75886524" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5134752" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5106383" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.5106383" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.5134752" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" weight="0.5319149" />
-      <window_info anchor="bottom" id="Logcat" order="9" sideWeight="0.49932975" weight="0.44539008" />
-      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49865952" weight="0.7446808" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020107" side_tool="true" weight="0.7446808" />
+      <window_info anchor="bottom" id="Logcat" order="9" sideWeight="0.49932975" weight="0.49503547" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49798927" weight="0.7446808" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
@@ -3374,7 +3288,8 @@
     <MESSAGE value="基本布局和简单数据加载" />
     <MESSAGE value="登陆注册页面、splash页面、网络请求简单处理" />
     <MESSAGE value="部分网络数据获取" />
-    <option name="LAST_COMMIT_MESSAGE" value="部分网络数据获取" />
+    <MESSAGE value="视频遗留问题&#10;通知遗留问题&#10;UI需优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="视频遗留问题&#10;通知遗留问题&#10;UI需优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3392,184 +3307,115 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt</url>
-          <line>74</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt</url>
+          <line>22</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt</url>
-          <line>24</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SearchActivity.kt</url>
+          <line>57</line>
           <properties />
-          <option name="timeStamp" value="47" />
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt</url>
-          <line>52</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SearchActivity.kt</url>
+          <line>69</line>
           <properties />
-          <option name="timeStamp" value="51" />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/NotifyModel.kt</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/jpush_style.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Answer.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/SearchResult.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Question.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="325">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/MedicineDetailFragment.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state relative-caret-position="226">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/CollectionId.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RiskMoreActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="223">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/EssayDetailFragment.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/AdvertisementModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="298">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
-            <element signature="e#55#813#0" expanded="true" />
+            <element signature="e#46#385#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="383">
+          <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="64" />
+          <folding>
+            <element signature="e#46#457#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/TVModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="500">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/MedicineModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="117" column="83" selection-start-line="117" selection-start-column="83" selection-end-line="117" selection-end-column="83" />
+        <state relative-caret-position="425">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/AndroidSDK/sources/android-28/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="586" column="19" selection-start-line="586" selection-start-column="19" selection-end-line="586" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModelImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/EssayModelImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/SearchAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/SearchModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="24" />
+          <caret line="43" column="72" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/AndroidSDK/sources/android-28/android/app/Activity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/SingleTon.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="4871" column="16" selection-start-line="4871" selection-start-column="16" selection-end-line="4871" selection-end-column="16" />
+        <state relative-caret-position="125">
+          <caret line="5" selection-start-line="5" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <element signature="e#207897#207898#0" expanded="true" />
-            <element signature="e#207945#207946#0" expanded="true" />
+            <element signature="e#40#116#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/b8815e48fb45e94821287365bd9ce8623f459ac7/kotlin-stdlib-1.3.21-sources.jar!/kotlin/Primitives.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="573" column="21" selection-start-line="573" selection-start-column="21" selection-end-line="573" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/App.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/LoadActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyCollectionActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SettingActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -3577,221 +3423,262 @@
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_search_bg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_case.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/temp.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/timg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/icon_bg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_tv_list.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5225">
-          <caret line="209" column="42" selection-start-line="209" selection-start-column="42" selection-end-line="209" selection-end-column="42" />
+        <state relative-caret-position="30">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_load.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/RegisterBefore.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/UserModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/setting_preference.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_setting.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/SingleTon.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/User.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/SearchActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1030">
-          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-          <folding>
-            <element signature="e#56#765#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_search_list.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/AndroidSDK/sources/android-28/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="19202" column="16" selection-start-line="19202" selection-start-column="16" selection-end-line="19202" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jude/rollviewpager/1.4.6/fd32c416214bfc0fcbe2c069194d2adadcd6cb97/rollviewpager-1.4.6-sources.jar!/com/jude/rollviewpager/RollPagerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="309" column="6" selection-start-line="309" selection-start-column="6" selection-end-line="309" selection-end-column="6" />
-          <folding>
-            <element signature="e#9097#9098#0" expanded="true" />
-            <element signature="e#9123#9124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/img_roll_pager.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/HomeFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="64" column="55" selection-start-line="64" selection-start-column="55" selection-end-line="64" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/RollPagerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="e#53#351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/Extends.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="57" column="91" selection-start-line="57" selection-start-column="91" selection-end-line="57" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/HttpUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="60" column="70" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Case.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#46#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_case_list.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        <state relative-caret-position="725">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="75">
+          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+          <folding>
+            <element signature="e#56#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/beans/Notify.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/UserFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="-595">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/NotifyAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="380">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/TVDetailActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#46#378#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="575">
+          <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/DetailActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/CaseActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1891">
+          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_case_detail.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="115" column="39" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/adapter/CaseAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="216">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/CaseDetailFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="122" column="27" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-          <folding>
-            <element signature="e#55#526#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="500">
+          <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/MyQuestionActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/CaseModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="75" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/CaseActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="225">
+          <caret line="15" column="80" selection-start-line="15" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/RegisterActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="257" column="33" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
+        <state relative-caret-position="1104">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/NotifyModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/utils/DatabaseHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="159" selection-start-line="13" selection-start-column="159" selection-end-line="13" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/model/QAModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_qa_detail.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/activities/QADetailActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/view/fragments/QADetailFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jpush-3.1.0.aar/04b0051702173e4ef4ebc9f6615a48f3/jars/classes.jar!/cn/jpush/android/api/JPushInterface.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yyl/obstetriciansassistant/receiver/NotifyReceiver.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="42" column="84" lean-forward="true" selection-start-line="37" selection-start-column="77" selection-end-line="42" selection-end-column="84" />
         </state>
       </provider>
     </entry>

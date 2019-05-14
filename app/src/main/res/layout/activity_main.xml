@@ -33,11 +33,6 @@
             app:menu="@menu/bottom_navigation_menu">
 
     </android.support.design.widget.BottomNavigationView>
-    <FrameLayout
-            android:id="@+id/video_full_screen_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-    </FrameLayout>
 
 </RelativeLayout>
 
